@@ -1,0 +1,38 @@
+{
+  "tokens_total": {
+    "month": "1,440",
+    "last_month": "2,670",
+    "or_balance": "69",
+    "combined_daily": "206",
+    "or_daily": "113",
+    "ant_daily": "93"
+  },
+  "tokens_models": [
+    {
+      "model": "claude-opus-4-6",
+      "cost": 466.58,
+      "label": "Expected"
+    },
+    {
+      "model": "claude-sonnet-4.6",
+      "cost": 179.46,
+      "label": "Off-Policy"
+    },
+    {
+      "model": "claude-opus-4.6",
+      "cost": 178.49,
+      "label": "Personal"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "cost": 157.81,
+      "label": "Fleet"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "cost": 129.96,
+      "label": "Old/Drift"
+    }
+  ],
+  "tokens_dashboard_url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/"
+}
