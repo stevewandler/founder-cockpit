@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "last_updated": "2026-06-22T21:00:00-05:00",
+    "scan_type": "Nightly Deep Scan",
+    "northy_message": "Midland ISD changed the math — $75K at full price, pipeline at ~$175K. ESC 10 is tomorrow. Two gates still unconfirmed: RAM dump status and ESC 16 exclusivity. Heather was today — hold both rooms. Don't let the thermostat show up the night before a big meeting."
+  },
+  "act_now": [
+    {
+      "id": "N-014",
+      "title": "ESC 10 Deck + Mabel Demo — TOMORROW",
+      "category": "Critical Path",
+      "detail": "Tuesday June 23 meeting with ESC 10 (Angela). Two critical-path gates: RAM data dump status and ESC 16 exclusivity answer. Neither confirmed resolved as of tonight. Midland ISD $75K PO = social proof for deck.",
+      "action": "Confirm RAM dump landed. Confirm ESC 16 agreement reviewed. Finalize 5-7 slides + Mabel demo. Add Midland ISD as proof point.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-015",
+      "title": "ESC 16 Exclusivity — Still Unanswered",
+      "category": "Legal / Blocker",
+      "detail": "Does ESC 16 agreement contain exclusivity clause? Nobody pulled it as of 11:45am. Gates entire ESC 10 regional carve-out strategy.",
+      "action": "Find agreement tonight or first thing tomorrow. Read exclusivity clause. Check exit language. Do not walk into ESC 10 without this answer.",
+      "status": "needs-steve"
+    }
+  ],
+  "think_about": [
+    {
+      "id": "N-023",
+      "title": "Midland ISD $75K PO — Pipeline at ~$175K",
+      "category": "Win / Metric Update",
+      "detail": "$75K full-price purchase order. Pipeline jumped from ~$100K to ~$175K. September gap narrowed to ~$25K.",
+      "urgency": "today"
+    },
+    {
+      "id": "N-016",
+      "title": "Patrick Reid Equity Cliff — 22 Days",
+      "category": "People / Governance",
+      "detail": "July 15 deadline. Board consent must be signed. Patrick out this week.",
+      "urgency": "this-week"
+    },
+    {
+      "id": "N-017",
+      "title": "Mabel Sales Demo Pattern — Productize After Tuesday",
+      "category": "Connection / Product",
+      "detail": "After ESC 10 Mabel demo: template the 5-slide district brief. 2-hour turnaround.",
+      "urgency": "next-week"
+    }
+  ],
+  "health": {
+    "frame": { "status": "green", "note": "ESC 10 as procurement rail is $10M thinking. Midland ISD at full price validates product." },
+    "floor": { "status": "green", "note": "No below-floor deals or distractions." },
+    "focus": { "status": "yellow", "note": "ESC 10 deck is right focus. Gated on RAM dump + ESC 16 answer. Tomorrow is showtime." },
+    "why": { "status": "yellow", "note": "Today's meetings were all technical — migration, agents, data. Re-center WHY before ESC 10. Lead with WHY." }
+  },
+  "finance": {
+    "summary": {
+      "cash": "$97.7K",
+      "september_projection": "TBD",
+      "current_burn_monthly": "~$115K",
+      "v1_savings_monthly": "$8-9K",
+      "deferred_comp_weekly": "$100K",
+      "deferral_repayment_october": "$106K"
+    },
+    "metrics": [
+      { "label": "Revenue to Date", "value": "$130,835", "trend": "up" },
+      { "label": "$1M Progress", "value": "13%", "trend": "warning" },
+      { "label": "Deferred Revenue", "value": "$203,407", "trend": "up" },
+      { "label": "A/P Aging", "value": "$210,429", "trend": "down" },
+      { "label": "Operating Cash YTD", "value": "($409,972)", "trend": "down" },
+      { "label": "Seed Funded", "value": "$570K / $882K", "trend": "warning" }
+    ],
+    "dashboards": [
+      { "label": "Financial Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-financial-dashboard/" },
+      { "label": "Michelle's CFO Folder", "url": "https://drive.google.com/drive/folders/1zhAdhuwdXH3WXpBr1_CYluGW3cvxmLZD" }
+    ]
+  },
+  "sales": {
+    "summary": {
+      "active_pipeline": "$546K TX + $516K Renewal",
+      "deals_closing_this_month": "25 TX new + 53 renewal",
+      "stalled_deals": "Utah SEA ($1.3M FY27), Tomball/San Benito/Lovejoy ($22K unmapped)",
+      "imta_districts": "Mesquite, Garland"
+    },
+    "note": "Zig taking over. Jan's Claude documenting methodology. Live at bookmarked-sales-dashboard.",
+    "links": [
+      { "label": "Sales Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/" },
+      { "label": "Jan's Methodology", "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017" },
+      { "label": "Sales Data JSON", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/data/sales-data.json" }
+    ]
+  },
+  "cliff": [
+    { "metric": "Cash", "value": "$250K", "target": "$178K proj", "gap": "72K burn", "status": "watch" },
+    { "metric": "Pipeline ARR (with Midland)", "value": "~$175K", "target": "$200K+", "gap": "$25K", "status": "watch" },
+    { "metric": "Sept 30", "value": "99 days", "target": "$1M ARR", "gap": "—", "status": "urgent" }
+  ],
+  "commitments": {
+    "steve_owes": [
+      { "what": "ESC 10 deck + Mabel demo prep", "to": "Self", "date": "Jun 23 (TOMORROW)", "status": "urgent" },
+      { "what": "ESC 16 agreement review — exclusivity clause", "to": "Self", "date": "Before ESC 10 meeting", "status": "urgent" },
+      { "what": "Mesquite follow-up — text Angel Rivera", "to": "Angel Rivera", "date": "Jun 18", "status": "overdue" },
+      { "what": "Call Michael Ruiz — Garland pricing + IMTA", "to": "Michael Ruiz", "date": "Jun 10", "status": "overdue" },
+      { "what": "Update pipeline dashboard with Midland ISD $75K", "to": "Self / Jan", "date": "Today", "status": "open" },
+      { "what": "Configure G-Brain for Jan and Teela", "to": "Jan / Teela", "date": "After ESC 10", "status": "watch" },
+      { "what": "Create Google Analytics epic with Sarah", "to": "Sarah", "date": "This week", "status": "open" }
+    ],
+    "team_owes": [
+      { "who": "Raju", "what": "Complete V2 data migration (aiming Wednesday)", "date": "Jun 25", "status": "open" },
+      { "who": "Raju", "what": "Centralize GRI for Hermes agents", "date": "This week", "status": "open" },
+      { "who": "Raju", "what": "Consult Jackson on V1 archival / shutdown", "date": "Jun 19", "status": "open" },
+      { "who": "Patrick", "what": "Send migration wave summary to Raju", "date": "Before noon today", "status": "overdue" },
+      { "who": "Patrick", "what": "Coordinate V1 transition verbiage with Zara", "date": "Today", "status": "open" },
+      { "who": "Nahuel", "what": "Test Lee for sprint process improvement", "date": "Tomorrow", "status": "open" }
+    ]
+  },
+  "quick_access": [
+    { "label": "Financial Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-financial-dashboard/" },
+    { "label": "Sales Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/" },
+    { "label": "Jan's Methodology (Confluence)", "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017" }
+  ],
+  "tokens_total": {
+    "month": "1,440",
+    "last_month": "2,670",
+    "or_balance": "107",
+    "combined_daily": "206",
+    "or_daily": "113",
+    "ant_daily": "93"
+  },
+  "tokens_models": [
+    { "model": "claude-sonnet-4.6", "cost": 179.46, "label": "Off-Policy" },
+    { "model": "claude-opus-4.6", "cost": 178.49, "label": "Personal" },
+    { "model": "deepseek-v4-pro", "cost": 157.81, "label": "Fleet" },
+    { "model": "claude-opus-4.8-fast", "cost": 128.47, "label": "Off-Policy" },
+    { "model": "gpt-5.5", "cost": 58.86, "label": "Off-Policy" }
+  ],
+  "tokens_dashboard_url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/",
+  "district_intel": {
+    "dashboards": [
+      { "label": "Board Minutes Intelligence", "description": "What Texas school boards are discussing — policy signals, book challenges, budget shifts", "repo_path": "bookmarked-os/claude-output/board-minutes-pipeline/output/board-minutes-dashboard.html" },
+      { "label": "Media Intelligence", "description": "District-level media coverage and parent/community sentiment", "repo_path": "bookmarked-os/claude-output/district-intelligence-portal/output/media-intelligence-dashboard.html" },
+      { "label": "Superintendent Movement", "description": "Superintendent job changes across Texas — new decision makers", "repo_path": "bookmarked-os/claude-output/district-intelligence-portal/output/supt-movement-dashboard.html" },
+      { "label": "IMTA Intelligence", "description": "Texas Instructional Materials Allotment — which districts have unspent funds", "repo_path": "bookmarked-os/claude-output/imta-pipeline/output/imta-intelligence-dashboard.html" }
+    ]
+  },
+  "intel": [
+    { "id": "N-024", "source": "Garry Tan", "title": "Senses & Reflexes — Integration Architecture for GBrain", "pattern": "Recipe format (YAML + markdown). Senses = data inputs. Reflexes = brain state-change triggers. 'Agents ARE the runtime' — recipes ARE the installer.", "applies_to": "Hermes skill ecosystem — formalizes what Northy does as shareable recipes", "priority": "Queue for review" },
+    { "id": "N-025", "source": "Shopify Engineering", "title": "Two-Stage LLM Pipeline — Propose then Critique", "pattern": "Stage 1 proposes clusters. Stage 2 critiques/corrects. Dynamic schemas per chunk enforce completeness. Precision-first.", "applies_to": "Mabel book intelligence / district benchmarking pipeline", "priority": "Queue for review" },
+    { "id": "N-022", "source": "Garry Tan", "title": "Skillify — Meta-Extraction Pattern", "pattern": "100+ skills. One command extracts repeatable workflows into reusable skills.", "applies_to": "Hermes skill system", "priority": "Queue for review" }
+  ],
+  "resolved": [
+    { "id": "N-001", "outcome": "TALAS Summit window closed. June 22-23, no confirmed attendance.", "when": "2026-06-21" },
+    { "id": "N-003", "outcome": "Systems-mode self-corrected within 24h. Steve moved to deal-mode unprompted.", "when": "2026-06-20" },
+    { "id": "N-013", "outcome": "TALAS Summit window closed.", "when": "2026-06-21" },
+    { "id": "N-002", "outcome": "Garland pricing mismatch absorbed into ESC 10 procurement rail motion.", "when": "2026-06-22" }
+  ]
+}
