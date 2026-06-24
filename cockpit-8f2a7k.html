@@ -456,7 +456,24 @@ function renderDistrictIntel() {
   const di = data.district_intel || {};
   const dashboards = di.dashboards || [];
   document.getElementById('districtIntelLinks').innerHTML = dashboards.length ? dashboards.map(function(d) {
-    return '<a href="https://github.com/BookmarkED-Corp/' + d.repo_path + '" target="_blank" rel="noopener" style="display:block;padding:10px 12px;font-size:.72rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);"><strong>' + d.label + ' →</strong><br><span style="color:var(--ink-3);font-size:.62rem;">' + d.description + '</span></a>';
+    // Dynamically convert legacy raw GitHub repo paths to clean, secure Vercel landing routes
+    const file = d.repo_path.split('/').pop();
+    let route = '/';
+    if (file.includes('board-minutes')) {
+      route = '/board-minutes';
+    } else if (file.includes('media-intelligence')) {
+      route = '/media-intelligence';
+    } else if (file.includes('supt-movement')) {
+      route = '/supt-movement';
+    } else if (file.includes('imta-intelligence')) {
+      route = '/imta-intelligence';
+    } else if (file.includes('district-profile')) {
+      route = '/district-profile';
+    } else {
+      route = '/' + file.replace('.html', '');
+    }
+    const vercelUrl = 'https://bookmarked-district-intelligence.vercel.app' + route;
+    return '<a href="' + vercelUrl + '" target="_blank" rel="noopener" style="display:block;padding:10px 12px;font-size:.72rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);"><strong>' + d.label + ' →</strong><br><span style="color:var(--ink-3);font-size:.62rem;">' + d.description + '</span></a>';
   }).join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">District intelligence dashboards loading...</div>';
 }
 
