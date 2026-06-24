@@ -393,7 +393,7 @@ function renderCommitments() {
 
 function renderQuickAccess() {
   const links = data.quick_access || [];
-  document.getElementById('quickAccess').innerHTML = links.map(l => '<a class="qa-link" href="' + l.url + '" target="_blank" rel="noopener"><span style="font-size:.9rem;width:22px;text-align:center;">' + l.icon + '</span><span>' + l.label + '</span></a>').join('');
+  document.getElementById('quickAccess').innerHTML = links.map(l => '<a class="qa-link" href="' + l.url + '" target="_blank" rel="noopener"><span style="font-size:.9rem;width:22px;text-align:center;">🔗</span><span>' + l.label + '</span></a>').join('');
 }
 
 // === STRATEGY TAB ===
