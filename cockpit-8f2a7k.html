@@ -398,19 +398,21 @@ function renderQuickAccess() {
 
 // === STRATEGY TAB ===
 function renderStrategy() {
+  const h = data.health || {};
+
   const decs = data.strategy_decisions || [];
-  document.getElementById('strategyDecisions').innerHTML = decs.map(d => '<div class="decision-row"><span class="decision-id">' + d.id + '</span><span style="flex:1;">' + d.title + '</span><span class="decision-status ' + d.status + '">' + d.status + '</span></div>').join('');
+  document.getElementById('strategyDecisions').innerHTML = decs.length ? decs.map(d => '<div class="decision-row"><span class="decision-id">' + d.id + '</span><span style="flex:1;">' + d.title + '</span><span class="decision-status ' + d.status + '">' + d.status + '</span></div>').join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Strategy decisions populate after nightly deep scan.</div>';
 
   const opens = data.strategy_open || [];
-  document.getElementById('strategyOpen').innerHTML = opens.map(o => '<div style="padding:6px 8px;border-bottom:1px solid rgba(0,0,0,.03);font-size:.7rem;"><span style="font-family:var(--mono);font-size:.53rem;color:var(--gold);">' + o.id + '</span> ' + o.question + '<div style="color:var(--ink-3);margin-top:2px;font-size:.65rem;">' + o.state + '</div></div>').join('');
+  document.getElementById('strategyOpen').innerHTML = opens.length ? opens.map(o => '<div style="padding:6px 8px;border-bottom:1px solid rgba(0,0,0,.03);font-size:.7rem;"><span style="font-family:var(--mono);font-size:.53rem;color:var(--gold);">' + o.id + '</span> ' + o.question + '<div style="color:var(--ink-3);margin-top:2px;font-size:.65rem;">' + o.state + '</div></div>').join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">No open questions.</div>';
 
   const plays = data.strategy_plays || [];
-  document.getElementById('strategyPlays').innerHTML = plays.map(p => '<div style="padding:8px 10px;border-bottom:1px solid rgba(0,0,0,.03);"><div style="font-weight:600;font-size:.74rem;">' + p.title + '</div><div style="font-size:.65rem;color:var(--ink-3);margin-top:2px;">' + p.status + '</div></div>').join('');
+  document.getElementById('strategyPlays').innerHTML = plays.length ? plays.map(p => '<div style="padding:8px 10px;border-bottom:1px solid rgba(0,0,0,.03);"><div style="font-weight:600;font-size:.74rem;">' + p.title + '</div><div style="font-size:.65rem;color:var(--ink-3);margin-top:2px;">' + p.status + '</div></div>').join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">' + (h.frame ? h.frame.note : 'No active plays.') + '</div>';
 
-  const frame = data.strategy_frame || {};
-  document.getElementById('strategyFrame').innerHTML = '<div style="padding:12px;font-size:.76rem;line-height:1.6;color:var(--ink-2);"><em>' + (frame.statement || '') + '</em></div>';
-  const why = data.strategy_why || {};
-  document.getElementById('strategyWhy').innerHTML = '<div style="padding:12px;font-size:.74rem;line-height:1.6;color:var(--ink-2);">' + (why.statement || '') + '<div style="font-family:var(--mono);font-size:.55rem;text-transform:uppercase;color:' + (why.status === 'aligned' ? 'var(--success)' : 'var(--caution)') + ';margin-top:8px;">' + (why.status || 'Checking') + '</div></div>';
+  const frame = data.strategy_frame || (h.frame ? { statement: h.frame.note } : {});
+  document.getElementById('strategyFrame').innerHTML = '<div style="padding:12px;font-size:.76rem;line-height:1.6;color:var(--ink-2);"><em>' + (frame.statement || 'No competitive frame set.') + '</em></div>';
+  const why = data.strategy_why || (h.why ? { statement: h.why.note, status: h.why.status === 'green' ? 'aligned' : 'checking' } : {});
+  document.getElementById('strategyWhy').innerHTML = '<div style="padding:12px;font-size:.74rem;line-height:1.6;color:var(--ink-2);">' + (why.statement || 'No WHY alignment data.') + '<div style="font-family:var(--mono);font-size:.55rem;text-transform:uppercase;color:' + (why.status === 'aligned' ? 'var(--success)' : 'var(--caution)') + ';margin-top:8px;">' + (why.status || 'Checking') + '</div></div>';
 }
 
 // === INTEL TAB ===
@@ -419,7 +421,7 @@ function renderIntel() {
   document.getElementById('intelPatterns').innerHTML = patterns.length ? patterns.map(p => '<div class="intel-card"><div class="intel-source">' + p.source + '</div><div class="intel-title">' + p.title + '</div><div class="intel-pattern">' + p.pattern + '</div><div style="font-family:var(--mono);font-size:.5rem;text-transform:uppercase;color:var(--gold);margin-top:6px;">' + p.priority + '</div></div>').join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">First intelligence scan runs Monday morning. Patterns from Garry Tan, Anthropic, and others will appear here.</div>';
 
   const watch = data.intel_watchlist || [];
-  document.getElementById('intelWatch').innerHTML = '<div style="padding:10px;">' + watch.map(w => '<div style="font-size:.7rem;padding:3px 0;"><strong>' + w.name + '</strong><br><span style="color:var(--ink-3);font-size:.62rem;">' + w.why + '</span></div>').join('<div style="height:6px;"></div>') + '</div>';
+  document.getElementById('intelWatch').innerHTML = watch.length ? '<div style="padding:10px;">' + watch.map(w => '<div style="font-size:.7rem;padding:3px 0;"><strong>' + w.name + '</strong><br><span style="color:var(--ink-3);font-size:.62rem;">' + w.why + '</span></div>').join('<div style="height:6px;"></div>') + '</div>' : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Watch list populates after nightly scan. Add entities Northy should track.</div>';
 }
 
 function renderDistrictIntel() {
@@ -467,18 +469,28 @@ function renderSales() {
 
 function renderCS() {
   const c = data.cs || {};
+  if (!Object.keys(c).length) {
+    document.getElementById('csSummary').innerHTML = '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Customer Success summary will appear after nightly scan. Track renewals, health scores, and support metrics.</div>';
+    document.getElementById('csLinks').innerHTML = '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">No CS links configured yet.</div>';
+    return;
+  }
   const s = c.summary || {};
   document.getElementById('csSummary').innerHTML = '<div style="padding:8px;">' + Object.entries(s).map(function(e) { return '<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(0,0,0,.03);"><span style="font-size:.7rem;color:var(--ink-3);">' + e[0].replace(/_/g,' ') + '</span><span style="font-size:.7rem;color:var(--ink);">' + e[1] + '</span></div>'; }).join('') + (c.note ? '<div style="font-size:.6rem;color:var(--ink-3);text-align:center;margin-top:8px;">' + c.note + '</div>' : '') + '</div>';
   const links = c.links || [];
-  document.getElementById('csLinks').innerHTML = links.map(function(l) { return '<a href="' + l.url + '" target="_blank" rel="noopener" style="display:block;padding:8px;font-size:.7rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);">' + l.label + ' →</a>'; }).join('');
+  document.getElementById('csLinks').innerHTML = links.length ? links.map(function(l) { return '<a href="' + l.url + '" target="_blank" rel="noopener" style="display:block;padding:8px;font-size:.7rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);">' + l.label + ' →</a>'; }).join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">No CS links configured yet.</div>';
 }
 
 function renderProduct() {
   const p = data.product || {};
+  if (!Object.keys(p).length) {
+    document.getElementById('prodSummary').innerHTML = '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Product summary will appear after nightly scan. Track roadmap status, sprint health, and feature delivery.</div>';
+    document.getElementById('prodLinks').innerHTML = '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">No product links configured yet.</div>';
+    return;
+  }
   const s = p.summary || {};
   document.getElementById('prodSummary').innerHTML = '<div style="padding:8px;">' + Object.entries(s).map(function(e) { return '<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(0,0,0,.03);"><span style="font-size:.7rem;color:var(--ink-3);">' + e[0].replace(/_/g,' ') + '</span><span style="font-size:.7rem;color:var(--ink);">' + e[1] + '</span></div>'; }).join('') + (p.note ? '<div style="font-size:.6rem;color:var(--ink-3);text-align:center;margin-top:8px;">' + p.note + '</div>' : '') + '</div>';
   const links = p.links || [];
-  document.getElementById('prodLinks').innerHTML = links.map(function(l) { return '<a href="' + l.url + '" target="_blank" rel="noopener" style="display:block;padding:8px;font-size:.7rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);">' + l.label + ' →</a>'; }).join('');
+  document.getElementById('prodLinks').innerHTML = links.length ? links.map(function(l) { return '<a href="' + l.url + '" target="_blank" rel="noopener" style="display:block;padding:8px;font-size:.7rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);">' + l.label + ' →</a>'; }).join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">No product links configured yet.</div>';
 }
 
 function toggleCard(e, card) {
