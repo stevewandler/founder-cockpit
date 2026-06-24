@@ -298,6 +298,7 @@
 
 <script>
 const DATA_URL = 'northy-cockpit.json';
+const TOKENS_URL = 'token-kpis.json';
 let data = null;
 let resolved = [];
 let activeTab = 'home';
@@ -316,7 +317,29 @@ function init() {
       list.appendChild(entry);
     });
   }
-  fetch(DATA_URL).then(r => r.json()).then(d => { data = d; render(); }).catch(() => {
+  
+  // Asynchronously load both cockpit data and token metrics to avoid race conditions
+  Promise.all([
+    fetch(DATA_URL).then(r => r.json()),
+    fetch(TOKENS_URL).then(r => r.json()).catch(() => ({})) // soft fallback if token metrics aren't ready
+  ]).then(function(results) {
+    data = results[0];
+    const tokens = results[1];
+    
+    // Inject token metrics into cockpit state
+    if (tokens.tokens_total) {
+      data.tokens_total = tokens.tokens_total;
+    }
+    if (tokens.tokens_models) {
+      data.tokens_models = tokens.tokens_models;
+    }
+    if (tokens.tokens_dashboard_url) {
+      data.tokens_dashboard_url = tokens.tokens_dashboard_url;
+    }
+    
+    render();
+  }).catch(function(err) {
+    console.error(err);
     document.getElementById('northyMsg').textContent = 'Unable to load data. Northy may not have run yet.';
   });
 }
