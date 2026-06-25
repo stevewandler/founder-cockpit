@@ -1,82 +1,88 @@
 {
   "meta": {
-    "last_updated": "2026-06-24T23:45:00-05:00",
-    "scan_type": "Business Hours Scan",
-    "northy_message": "Jan's methodology is done — Zig is clear to run. Elgin ISD committed at $18,402. Two things still need you: Ram is ready to run the Mabel data extract (one question), and the ESC-10 proposal is due Friday."
+    "last_updated": "2026-06-25T02:00:00-05:00",
+    "scan_type": "Nightly Deep Scan",
+    "northy_message": "ESC-10 proposal due in 48h. Patrick equity cliff in 20 days — Scale Firm status unknown. Garland has a lever nobody's pulled: Moak Casey has the superintendent's ear. And Garry Tan just shipped gstack — read it before July."
   },
   "act_now": [
     {
-      "id": "N-026",
-      "title": "ESC-10 Proposal — Due FRIDAY (3 days)",
-      "category": "Critical Path",
-      "detail": "Three-bucket partnership greenlit June 23: (1) District revenue share, (2) ESC-10 as paid PD trainer, (3) AI librarian ~$70-80K/yr. This morning's standup focused on capabilities docs — not the proposal itself. 5 open deliverables: Google Sheet of 81 districts, rate card from Lori Aden, Angela Ellis brain dump, IT/tech conversation, full proposal draft. Jan collaborating.",
-      "action": "Today: ping Lori for rate card, Angela for brain dump scheduling. Tomorrow: draft proposal. Friday gates July 29 follow-up meeting.",
+      "id": "N-031",
+      "title": "Garland $140K — Use the Moak Casey Lever (June 30)",
+      "category": "Deal / Pipeline",
+      "detail": "Michael Ruiz unreachable since June 10. June 30 is 5 days. G-Brain has the play: Moak Casey's Jodi agreed in May to email Dr. Rick Lopez (Garland superintendent) once Steve debriefed her. That debrief happened. Nobody followed up. Moak Casey also has Buck's contacts at Garland. This is a two-step: (1) DM Jodi one sentence asking her to put in the word now. (2) Follow up with Michael framing ESC-10 as new context.",
+      "action": "DM Jodi at Moak Casey — one sentence re: Garland superintendent. Then call/email Michael Ruiz with ESC-10 hook.",
       "status": "needs-steve"
     },
     {
-      "id": "N-030",
-      "title": "Mabel/Ram Data Extract — One Answer Unblocks 6 Hours of Work",
-      "category": "Product / Opportunity",
-      "detail": "Ram confirmed all 5 extract files feasible (~4-6h of work). He's ready to run. One question blocking him: for enrollment banding (<1K, 1K-5K, 5K-15K, 15K+), should he use total student count per district (from _CampusToStudent / Student.districtId) as the proxy, or another metric? This is the data that feeds the book intelligence engine and Mabel's sales demo capability.",
-      "action": "Reply to Ram's DM in Slack with: 'Yes — use total student count per district from Student.districtId as the enrollment proxy. Run it.' One sentence unlocks the extract.",
+      "id": "N-032",
+      "title": "Patrick Equity Cliff — 20 Days — Scale Firm Status Unknown",
+      "category": "People / Governance",
+      "detail": "July 15 is hard. The June 19 Charlie call was supposed to close open items so written consent circulated 'next week.' That was 6 days ago. Scale Firm needs to draft the board consent resolution. All 5 board members must sign electronically. Patrick permanently loses vesting credit if this doesn't execute before July 15.",
+      "action": "Email or call Scale Firm Thursday morning. Confirm consent is drafted. If not, escalate immediately to Charlie.",
       "status": "needs-steve"
     }
   ],
   "think_about": [
     {
+      "id": "N-033",
+      "title": "ESC-10 Proposal — 48 Hours (Due Friday)",
+      "category": "Critical Path",
+      "urgency": "today"
+    },
+    {
+      "id": "N-030",
+      "title": "Ram/Mabel Data Extract — One Slack Message Away",
+      "category": "Product / Opportunity",
+      "urgency": "today"
+    },
+    {
+      "id": "N-034",
+      "title": "Garry Tan's gstack — Read Before July L10",
+      "category": "Founder Intelligence / July Sprint",
+      "urgency": "this-week"
+    },
+    {
       "id": "N-029",
       "title": "Engineering Succession — Nahuel Exit Needs Replacement First",
       "category": "People / Risk",
       "urgency": "this-week"
-    },
-    {
-      "id": "N-028",
-      "title": "Garland ISD $140K — June 30 Deadline (Called today?)",
-      "category": "Deal / Pipeline",
-      "urgency": "today"
-    },
-    {
-      "id": "N-016",
-      "title": "Patrick Reid Equity Cliff — 21 Days (July 15)",
-      "category": "People / Governance",
-      "urgency": "this-week"
     }
   ],
   "health": {
-    "frame": { "status": "green", "note": "ESC-10 as procurement rail into 81 districts is $10M thinking. Three-bucket model validated. Deal-mode active." },
-    "floor": { "status": "green", "note": "No below-floor distractions. Morning focused on ESC-10 + Mesquite capabilities + outreach." },
-    "focus": { "status": "yellow", "note": "Capabilities doc is good. The proposal draft itself needs to start. Friday is 3 days away." },
-    "why": { "status": "green", "note": "ESC-10 pitch led with WHY. Compliance protection → every kid finds their book. Validated." }
+    "frame": { "status": "green", "note": "ESC-10 + renewals + Garland = $10M+ thinking. Frame is solid." },
+    "floor": { "status": "green", "note": "No below-floor deals or distractions. Moak Casey lever is the right play for Garland." },
+    "focus": { "status": "yellow", "note": "ESC-10 proposal is the crux. Two actions Thursday: Scale Firm call + Moak Casey call. Everything else waits." },
+    "why": { "status": "green", "note": "Strategy brief to team led with WHY. Outbound 3.5x. Deal-mode sustained." }
   },
   "cliff": [
-    { "metric": "Cash", "value": "~$250K", "target": "$178K proj", "gap": "~$72K burn/mo", "status": "watch" },
-    { "metric": "ARR Progress", "value": "~$175K+ banked", "target": "$1M", "gap": "$825K", "status": "urgent" },
-    { "metric": "Sept 30 Deadline", "value": "97 days", "target": "$1M ARR", "gap": "—", "status": "urgent" },
-    { "metric": "Garland ISD", "value": "$140K quote", "target": "Close by Jun 30", "gap": "6 days", "status": "urgent" },
-    { "metric": "Patrick Equity Cliff", "value": "July 15", "target": "Board consent signed", "gap": "21 days", "status": "watch" }
+    { "metric": "ARR Progress", "value": "$175K+ banked", "target": "$1M by Sept 30", "gap": "$825K", "status": "urgent" },
+    { "metric": "Garland ISD", "value": "$140K quote", "target": "Close by June 30", "gap": "5 days", "status": "urgent" },
+    { "metric": "Patrick Equity Cliff", "value": "July 15", "target": "Board consent signed", "gap": "20 days", "status": "urgent" },
+    { "metric": "ESC-10 Proposal", "value": "Due Friday", "target": "Sent to Shay + Lori", "gap": "48 hours", "status": "urgent" },
+    { "metric": "Cash", "value": "~$250K", "target": "$178K projection", "gap": "~$72K/mo burn", "status": "watch" }
   ],
   "commitments": {
     "steve_owes": [
-      { "what": "ESC-10 proposal draft", "to": "ESC-10 / Self", "date": "Jun 27 (FRIDAY)", "status": "urgent" },
-      { "what": "Answer Ram's enrollment banding question to unblock Mabel extract", "to": "Ram (Slack DM)", "date": "Today", "status": "urgent" },
-      { "what": "Call Michael Ruiz — Garland June 30 deadline", "to": "Michael Ruiz", "date": "Today (committed in standup)", "status": "urgent" },
-      { "what": "Message Lisa Hill (no response)", "to": "Lisa Hill", "date": "Today", "status": "open" },
-      { "what": "Message Melissa from Humble ISD", "to": "Melissa", "date": "This afternoon", "status": "open" },
-      { "what": "Capabilities doc — general Bookmarked, then Mesquite-specific", "to": "Self", "date": "Today/Tomorrow", "status": "open" },
-      { "what": "Configure G-Brain for Jan and Teela", "to": "Jan / Teela", "date": "After ESC-10", "status": "watch" },
-      { "what": "Patrick equity cliff — confirm board consent in motion", "to": "Patrick / Charlie", "date": "This week", "status": "watch" }
+      { "what": "ESC-10 proposal draft — skeleton today, full send Friday", "to": "ESC-10 / Jan", "date": "Jun 27 (FRIDAY)", "status": "urgent" },
+      { "what": "DM Jodi at Moak Casey re: Garland superintendent intro", "to": "Jodi Duron, Moak Casey", "date": "Thursday June 25", "status": "urgent" },
+      { "what": "Follow up with Michael Ruiz — ESC-10 hook + June 30 urgency", "to": "Michael Ruiz, Garland ISD", "date": "Thursday June 25", "status": "urgent" },
+      { "what": "Call Scale Firm — confirm Patrick board consent drafted", "to": "Scale Firm", "date": "Thursday June 25 AM", "status": "urgent" },
+      { "what": "Answer Ram's enrollment banding question (unblocks Mabel extract)", "to": "Ram (Slack DM)", "date": "Thursday June 25", "status": "urgent" },
+      { "what": "Configure G-Brain for Jan and Teela", "to": "Jan / Teela", "date": "After ESC-10", "status": "watch" }
     ],
     "team_owes": [
-      { "who": "Raju", "what": "Beaumont migration complete (RV1 done tonight)", "date": "Jun 24 tonight", "status": "open" },
-      { "who": "Jan", "what": "Send Humble ISD sheet to Steve", "date": "Today morning", "status": "open" },
-      { "who": "Jan", "what": "Methodology fully documented to Confluence + GitHub (DONE ✅)", "date": "Jun 24", "status": "done" }
+      { "who": "Raju", "what": "Beaumont migration complete (RV1)", "date": "Jun 24 tonight", "status": "open" },
+      { "who": "Jan", "what": "ESC-10 proposal collaboration", "date": "Jun 27", "status": "open" },
+      { "who": "Jan", "what": "Methodology fully documented to Confluence + GitHub (DONE)", "date": "Jun 24", "status": "done" },
+      { "who": "Lori Aden (ESC-10)", "what": "Rate card for 81 Region 10 districts", "date": "ASAP for Friday", "status": "open" }
     ]
   },
   "quick_access": [
     { "label": "Financial Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-financial-dashboard/" },
     { "label": "Sales Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/" },
     { "label": "Jan's Methodology (Confluence)", "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017" },
-    { "label": "Mabel ↔ Ram Conversation Log", "url": "https://brain.stevewandler.com/agents/mabel-ram-conversation-log" }
+    { "label": "Garry Tan gstack", "url": "https://github.com/garrytan/gstack" },
+    { "label": "ESC Region 10 — G-Brain", "url": "https://brain.stevewandler.com/esc-region-10" }
   ],
   "finance": {
     "summary": {
@@ -100,12 +106,12 @@
   },
   "sales": {
     "summary": {
-      "active_pipeline": "TX new + Renewals (~$1M+ gross pipeline)",
-      "deals_closing_this_month": "Garland ($140K), Elgin ($18K confirmed today), renewals",
-      "stalled_deals": "Utah SEA ($1.3M FY27 — parked), Michael Ruiz/Garland unreachable",
+      "active_pipeline": "TX new (~$546K) + Renewals (~$516K)",
+      "deals_closing_this_month": "Garland ($140K June 30), Elgin confirmed ($18,402), renewals wave",
+      "stalled_deals": "Utah SEA ($1.3M FY27 — parked), Michael Ruiz/Garland unreachable, Cy-Fair ($107K — Jan's account, last contact Apr 2025)",
       "imta_districts": "Mesquite, Garland"
     },
-    "note": "Jan methodology COMPLETE — documented to Confluence + GitHub. Zig clear to run daily cron. Elgin ISD committed $18,402 today (upsell from $2 to $3/student + 1K more students). Jan's dashboard weights are canonical; Quote Requested = 60%.",
+    "note": "Jan methodology COMPLETE — documented Confluence + GitHub June 24. Zig clear to run daily cron. Quote Requested = 60%. Elgin ISD upsell confirmed $18,402. CRM hygiene flag: 5 of 11 close-ready deals have zero 2026 engagement despite bulk update masking staleness.",
     "links": [
       { "label": "Sales Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/" },
       { "label": "Jan's Methodology (Confluence)", "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017" }
@@ -113,25 +119,27 @@
   },
   "cs": {
     "summary": {
-      "note": "Beaumont migration in progress (Raju). V1 shutdown saves $8-9K/month when complete. Atlas owns CS status — check Atlas for ticket/onboarding detail."
+      "note": "Beaumont migration in progress (Raju tonight). V1 shutdown saves $8-9K/month when complete. Atlas owns CS status — check Atlas for ticket/onboarding detail."
     }
   },
   "product": {
     "summary": {
-      "note": "Mabel book intelligence engine blocked on Ram data extract. One answer from Steve unblocks 5 CSV files from V1. July = AI architecture sprint (decided in standup today)."
+      "note": "Mabel book intelligence engine blocked on Ram data extract — one Slack answer unblocks 6 hours of work. July = AI architecture sprint (decided June 24 standup). gstack by Garry Tan is the reference architecture to review before July L10."
     }
   },
   "strategy_decisions": [
-    { "id": "D-ESC10", "title": "ESC-10 three-bucket partnership model greenlit", "status": "active" },
+    { "id": "D-ESC10", "title": "ESC-10 three-bucket partnership model greenlit (June 23)", "status": "active" },
     { "id": "D-DASH", "title": "All dashboards moved out of roi-calculator. Zig owns sales. Northy owns architecture.", "status": "active" },
-    { "id": "D-JULY", "title": "July = AI architecture sprint. L10 next week to align team.", "status": "active" },
-    { "id": "D-INDIA", "title": "India engineering hire: $3-4K/month + $300-400 markup. 30-day eval. One person by next week.", "status": "active" }
+    { "id": "D-JULY", "title": "July = AI architecture sprint. L10 July 7 to align team.", "status": "active" },
+    { "id": "D-INDIA", "title": "India engineering hire: $3-4K/month + $300-400 markup. 30-day eval. One person by next week.", "status": "active" },
+    { "id": "D-JAN-ZIG", "title": "Jan's methodology → Zig. Dashboard weights canonical. Quote Requested = 60%. June 24.", "status": "done" }
   ],
   "strategy_open": [
-    { "id": "O-GARLAND", "title": "Garland pricing: $89K founding vs $140K quote. Michael Ruiz unreachable.", "status": "open" },
+    { "id": "O-GARLAND", "title": "Garland: Michael Ruiz unreachable. Moak Casey lever available. June 30 deadline.", "status": "urgent" },
+    { "id": "O-PATRICK-EQUITY", "title": "Patrick equity cliff July 15. Scale Firm status unknown. Board consent needed.", "status": "urgent" },
     { "id": "O-NAHUEL", "title": "Nahuel succession: replacement candidate needed before ending engagement.", "status": "open" },
-    { "id": "O-FLORIDA", "title": "Florida state book intelligence platform — opportunity or competition. Not immediate.", "status": "watch" },
-    { "id": "O-COMMISSION", "title": "Commission structure for zero-to-paid conversions — must define before July.", "status": "open" }
+    { "id": "O-COMMISSION", "title": "Commission structure for zero-to-paid conversions — define before July.", "status": "open" },
+    { "id": "O-ESC10-RATE-CARD", "title": "ESC-10 rate card from Lori Aden — needed for Friday proposal.", "status": "open" }
   ],
   "tokens_total": {
     "month": "1,440",
@@ -158,17 +166,38 @@
     ]
   },
   "intel": [
-    { "id": "N-024", "source": "Garry Tan", "title": "Senses & Reflexes — Integration Architecture for GBrain", "pattern": "Recipe format (YAML + markdown). Senses = data inputs. Reflexes = brain state-change triggers. 'Agents ARE the runtime' — recipes ARE the installer.", "applies_to": "Hermes skill ecosystem — formalizes what Northy does as shareable recipes", "priority": "Queue for review" },
-    { "id": "N-025", "source": "Shopify Engineering", "title": "Two-Stage LLM Pipeline — Propose then Critique", "pattern": "Stage 1 proposes clusters. Stage 2 critiques/corrects. Dynamic schemas per chunk enforce completeness. Precision-first.", "applies_to": "Mabel book intelligence / district benchmarking pipeline", "priority": "Queue for review" },
-    { "id": "N-022", "source": "Garry Tan", "title": "Skillify — Meta-Extraction Pattern", "pattern": "100+ skills. One command extracts repeatable workflows into reusable skills.", "applies_to": "Hermes skill system", "priority": "Queue for review" }
+    {
+      "id": "N-035",
+      "source": "Garry Tan (github.com/garrytan/gstack)",
+      "title": "gstack — Role-Based AI Engineering Team (23 Specialists)",
+      "pattern": "Omni-bot is dead. Thin harness + fat specialist skills = ships. 23 roles as slash commands (CEO review, Eng Manager, Designer, QA, Security, Release Engineer). Garry claims 810x his 2013 code pace. The bottleneck is scaffolding, not model intelligence.",
+      "applies_to": "July AI architecture sprint — role clarity for Bookmarked fleet (Dewey + subordinates). /office-hours forces assumptions open before code is written. Same gap exists in current agent prompting.",
+      "priority": "Queue for review — read before July 7 L10"
+    },
+    {
+      "id": "N-024",
+      "source": "Garry Tan",
+      "title": "Senses & Reflexes — Integration Architecture for GBrain",
+      "pattern": "Recipe format (YAML + markdown). Senses = data inputs. Reflexes = brain state-change triggers. Agents ARE the runtime — recipes ARE the installer.",
+      "applies_to": "Hermes skill ecosystem — formalizes what Northy does as shareable recipes",
+      "priority": "Queue for review"
+    },
+    {
+      "id": "N-025",
+      "source": "Shopify Engineering",
+      "title": "Two-Stage LLM Pipeline — Propose then Critique",
+      "pattern": "Stage 1 proposes clusters. Stage 2 critiques/corrects. Dynamic schemas enforce completeness. Precision-first architecture.",
+      "applies_to": "Mabel book intelligence / district benchmarking pipeline",
+      "priority": "Queue for review"
+    }
   ],
   "resolved": [
-    { "id": "N-027", "outcome": "Raju/Steve India hiring meeting done. $3-4K/mo + 30-day eval. Lawyer call today. Target: 1 person by next week. Nahuel succession risk surfaced as N-029.", "when": "2026-06-24" },
-    { "id": "N-014", "outcome": "ESC-10 meeting happened June 23. Three-bucket partnership greenlit. Replaced by N-026.", "when": "2026-06-23" },
+    { "id": "JAN-METHODOLOGY", "outcome": "Jan confirmed in Slack June 24: methodology documented to Confluence + GitHub. Dashboard weights canonical. Quote Requested = 60%. Zig clear to run daily cron.", "when": "2026-06-24" },
+    { "id": "N-027", "outcome": "Raju/Steve India hiring meeting done. $3-4K/mo + 30-day eval. Lawyer call today. Target: 1 person by next week.", "when": "2026-06-24" },
+    { "id": "N-014", "outcome": "ESC-10 meeting happened June 23. Three-bucket partnership greenlit. Replaced by N-026/N-033.", "when": "2026-06-23" },
     { "id": "N-015", "outcome": "ESC-16 exclusivity resolved. No conflict. Separate MOUs.", "when": "2026-06-23" },
-    { "id": "N-023", "outcome": "Midland ISD $75K PO confirmed. Zero-to-paid conversion.", "when": "2026-06-22" },
-    { "id": "JAN-METHODOLOGY", "outcome": "Jan's Claude documented full methodology to Confluence + GitHub. Zig clear to run daily HubSpot cron. Quote Requested stage = 60%. Dashboard weights = canonical.", "when": "2026-06-24" },
-    { "id": "N-001", "outcome": "TALAS Summit window closed. June 22-23, no confirmed attendance.", "when": "2026-06-21" },
-    { "id": "N-003", "outcome": "Systems-mode self-corrected within 24h. Steve moved to deal-mode unprompted.", "when": "2026-06-20" }
+    { "id": "N-023", "outcome": "Midland ISD $77K PO confirmed. Zero-to-paid conversion.", "when": "2026-06-22" },
+    { "id": "N-001", "outcome": "TALAS Summit window closed.", "when": "2026-06-21" },
+    { "id": "N-003", "outcome": "Systems-mode self-corrected within 24h.", "when": "2026-06-20" }
   ]
 }
