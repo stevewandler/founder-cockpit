@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Northy — Founder Cockpit</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <style>
   :root {
     --ink:#101828;--ink-2:#2a2d35;--ink-3:#6b7280;
@@ -237,11 +239,39 @@
 <div class="tab-content" id="tab-tokens">
   <div class="main">
     <div class="left">
-      <div class="panel"><div class="ph"><div class="pt">Usage by Model — This Month</div></div><div class="pb" id="tokenModels">Loading...</div></div>
+      <div class="panel">
+        <div class="ph">
+          <div class="pt">Spend by Model — This Month</div>
+          <div style="font-family:var(--mono);font-size:.55rem;color:var(--ink-3);" id="tokenLastUpdated"></div>
+        </div>
+        <div class="pb" id="tokenModels"><div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Loading...</div></div>
+      </div>
+      <div class="panel">
+        <div class="ph"><div class="pt">Daily Spend — Last 14 Days</div></div>
+        <div class="pb" style="padding:12px;">
+          <canvas id="tokenDailyChart" height="160"></canvas>
+        </div>
+      </div>
     </div>
     <div class="right">
-      <div class="panel"><div class="ph"><div class="pt">Total Spend</div></div><div class="pb" id="tokenTotal">Loading...</div></div>
-      <div class="panel"><div class="ph"><div class="pt">Daily Trend</div></div><div class="pb" id="tokenTrend">Loading...</div></div>
+      <div class="panel">
+        <div class="ph"><div class="pt">This Month</div></div>
+        <div class="pb" id="tokenTotalCard"><div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Loading...</div></div>
+      </div>
+      <div class="panel">
+        <div class="ph"><div class="pt">Daily Burn Rate</div></div>
+        <div class="pb" id="tokenBurnCard"><div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Loading...</div></div>
+      </div>
+      <div class="panel">
+        <div class="ph"><div class="pt">OR Balance</div></div>
+        <div class="pb" id="tokenBalanceCard"><div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Loading...</div></div>
+      </div>
+      <div class="panel">
+        <div class="ph"><div class="pt">Spend by Model — Donut</div></div>
+        <div class="pb" style="padding:12px;">
+          <canvas id="tokenDonutChart" height="160"></canvas>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -352,6 +382,11 @@ function showTab(tab, el) {
   document.getElementById('tab-' + tab).classList.add('active');
   el.classList.add('active');
   activeTab = tab;
+  // Load token data fresh when tab is clicked
+  if (tab === 'tokens') {
+    tokenChartsRendered = false;  // reset so charts redraw if needed
+    renderTokens();
+  }
 }
 
 function render() {
@@ -478,19 +513,147 @@ function renderDistrictIntel() {
 }
 
 // === TOKENS TAB ===
-function renderTokens() {
-  const models = data.tokens_models || [];
-  if (models.length) {
-    const maxCost = Math.max.apply(null, models.map(m => m.cost));
-    document.getElementById('tokenModels').innerHTML = models.map(m => '<div class="token-row"><div><div class="token-model">' + m.model + '</div><div class="token-bar-wrap"><div class="token-bar" style="width:' + ((m.cost / maxCost) * 100) + '%"></div></div></div><div class="token-cost">$' + m.cost.toFixed(2) + '</div></div>').join('');
-  } else {
-    document.getElementById('tokenModels').innerHTML = '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Token data will auto-populate from Anthropic + OpenRouter APIs.<br><br><span style="font-family:var(--mono);font-size:.55rem;">API endpoints ready: GET /api/v1/key (OpenRouter) · Anthropic Console billing API</span></div>';
+// === TOKENS TAB ===
+// Supabase config — anon key only (read-only, safe in browser)
+const SUPABASE_URL = 'https://iybmzikulnjcqhrytbpq.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml5Ym16aWt1bG5qY3Focnl0YnBxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIzNDYxNjksImV4cCI6MjA5NzkyMjE2OX0.H12pTe3-xmzOfMsZqeHHzTJKpgkNjO4L10p6iFo9xj0';
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+let tokenChartsRendered = false;
+
+async function renderTokens() {
+  try {
+    // Fetch summary + last 14 days of daily spend + model breakdown in parallel
+    const [summaryResp, dailyResp, modelResp] = await Promise.all([
+      supabaseClient.from('token_summary').select('*').eq('id', 1).single(),
+      supabaseClient.from('token_daily_spend').select('*').order('date', {ascending: true}).limit(14),
+      supabaseClient.from('token_model_spend').select('*').order('spend', {ascending: false}).limit(20)
+        .gte('date', new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
+    ]);
+
+    if (summaryResp.error) throw summaryResp.error;
+    if (dailyResp.error) throw dailyResp.error;
+    if (modelResp.error) throw modelResp.error;
+
+    const summary = summaryResp.data;
+    const daily = dailyResp.data || [];
+    const models = modelResp.data || [];
+
+    // Aggregate model spend across 7-day window (combine same model from both providers)
+    const modelMap = {};
+    models.forEach(m => {
+      const key = m.model_short;
+      if (!modelMap[key]) {
+        modelMap[key] = { model: key, spend: 0, label: m.policy_label || '' };
+      }
+      modelMap[key].spend += parseFloat(m.spend);
+    });
+    const topModels = Object.values(modelMap).sort((a, b) => b.spend - a.spend).slice(0, 8);
+    const maxCost = topModels.length > 0 ? topModels[0].spend : 1;
+
+    // Label colors
+    const labelColor = {
+      'Fleet': 'var(--success)',
+      'Personal': 'var(--blue)',
+      'Expected': 'var(--success)',
+      'Off-Policy': 'var(--caution)',
+      'Old/Drift': 'var(--danger)',
+    };
+
+    // Render model bars
+    document.getElementById('tokenModels').innerHTML = topModels.length ? topModels.map(m => {
+      const color = labelColor[m.label] || 'var(--ink-3)';
+      return `<div class="token-row">
+        <div style="flex:1;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px;">
+            <div class="token-model">${m.model}</div>
+            <div style="font-family:var(--mono);font-size:.6rem;color:${color};">${m.label}</div>
+          </div>
+          <div class="token-bar-wrap"><div class="token-bar" style="width:${(m.spend / maxCost * 100).toFixed(1)}%"></div></div>
+        </div>
+        <div class="token-cost" style="margin-left:12px;">$${m.spend.toFixed(2)}</div>
+      </div>`;
+    }).join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">No model data yet</div>';
+
+    // Render summary cards
+    if (summary) {
+      const updatedAt = new Date(summary.updated_at);
+      document.getElementById('tokenLastUpdated').textContent =
+        'Updated ' + updatedAt.toLocaleDateString('en-US', {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'});
+
+      document.getElementById('tokenTotalCard').innerHTML = `
+        <div style="padding:14px;text-align:center;">
+          <div class="m-label">This Month (7d rolling)</div>
+          <div style="font-family:var(--serif);font-size:2rem;color:var(--ink);margin:6px 0;">$${parseFloat(summary.month_spend || 0).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0})}</div>
+          <div class="m-gap">last period: $${parseFloat(summary.last_month_spend || 0).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0})}</div>
+        </div>`;
+
+      document.getElementById('tokenBurnCard').innerHTML = `
+        <div style="padding:14px;text-align:center;">
+          <div class="m-label">7-Day Average</div>
+          <div style="font-family:var(--serif);font-size:1.8rem;color:var(--ink);margin:6px 0;">$${parseFloat(summary.combined_daily_avg || 0).toFixed(0)}<span style="font-size:1rem;color:var(--ink-3)">/day</span></div>
+          <div class="m-gap">OR: $${parseFloat(summary.or_daily_avg || 0).toFixed(0)}/day &nbsp;·&nbsp; AN: $${parseFloat(summary.ant_daily_avg || 0).toFixed(0)}/day</div>
+        </div>`;
+
+      const daysLeft = parseFloat(summary.days_balance_remaining || 0);
+      const balanceColor = daysLeft < 3 ? 'var(--danger)' : daysLeft < 7 ? 'var(--caution)' : 'var(--success)';
+      document.getElementById('tokenBalanceCard').innerHTML = `
+        <div style="padding:14px;text-align:center;">
+          <div class="m-label">OpenRouter Credits</div>
+          <div style="font-family:var(--serif);font-size:2rem;color:${balanceColor};margin:6px 0;">$${parseFloat(summary.or_balance || 0).toFixed(0)}</div>
+          <div class="m-gap">~${daysLeft.toFixed(0)} days at current burn</div>
+        </div>`;
+    }
+
+    // Render charts (only once — they don't need to re-render on tab switch)
+    if (!tokenChartsRendered && daily.length > 0) {
+      tokenChartsRendered = true;
+      const dates = daily.map(d => d.date.slice(5));   // MM-DD
+      const orVals = daily.map(d => parseFloat(d.or_spend || 0));
+      const antVals = daily.map(d => parseFloat(d.ant_spend || 0));
+
+      // Daily stacked bar chart
+      new Chart(document.getElementById('tokenDailyChart'), {
+        type: 'bar',
+        data: {
+          labels: dates,
+          datasets: [
+            { label: 'OpenRouter', data: orVals, backgroundColor: 'rgba(37,99,235,.65)', borderRadius: 2 },
+            { label: 'Anthropic', data: antVals, backgroundColor: 'rgba(217,88,42,.65)', borderRadius: 2 }
+          ]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { labels: { color: 'var(--ink-3)', font: { size: 10 } } } },
+          scales: {
+            x: { stacked: true, ticks: { color: 'var(--ink-3)', font: { size: 9 } }, grid: { display: false } },
+            y: { stacked: true, ticks: { color: 'var(--ink-3)', callback: v => '$' + v }, grid: { color: 'rgba(16,24,40,.06)' } }
+          }
+        }
+      });
+
+      // Model donut chart
+      const donutModels = topModels.slice(0, 6);
+      const COLORS = ['#12A38C','#2563eb','#d97706','#c0392b','#107569','#6366f1'];
+      new Chart(document.getElementById('tokenDonutChart'), {
+        type: 'doughnut',
+        data: {
+          labels: donutModels.map(m => m.model),
+          datasets: [{ data: donutModels.map(m => m.spend.toFixed(2)), backgroundColor: COLORS, borderWidth: 0 }]
+        },
+        options: {
+          responsive: true,
+          cutout: '62%',
+          plugins: { legend: { position: 'bottom', labels: { color: 'var(--ink-3)', padding: 8, font: { size: 10 }, usePointStyle: true } } }
+        }
+      });
+    }
+
+  } catch (err) {
+    console.error('Token tab load failed:', err);
+    document.getElementById('tokenModels').innerHTML =
+      '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">Failed to load token data. Check Supabase connection.</div>';
   }
-
-  const total = data.tokens_total || {};
-  document.getElementById('tokenTotal').innerHTML = '<div style="padding:14px;text-align:center;"><div class="m-label">This Month</div><div style="font-family:var(--serif);font-size:2rem;color:var(--ink);margin:6px 0;">' + (total.month ? '$' + total.month : '—') + '</div><div class="m-gap">last month: ' + (total.last_month ? '$' + total.last_month : '—') + '</div></div>';
-
-  document.getElementById('tokenTrend').innerHTML = '<div style="padding:14px;text-align:center;color:var(--ink-3);font-size:.7rem;"><a href="' + (data.tokens_dashboard_url || '#') + '" target="_blank" rel="noopener" style="display:block;color:var(--gold);font-size:.8rem;text-decoration:none;margin-bottom:8px;">Open Full Token Dashboard →</a><span style="font-size:.62rem;">Charts, model breakdown, off-policy alerts. Auto-generated daily.</span></div>';
 }
 
 // === DOMAIN TABS ===
