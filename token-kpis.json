@@ -1,31 +1,34 @@
 {
   "tokens_total": {
-    "month": "1,440",
+    "month": "1,692",
     "last_month": "2,670",
-    "or_balance": "26",
-    "combined_daily": "206",
-    "or_daily": "113",
-    "ant_daily": "93"
+    "or_balance": "94",
+    "combined_daily": "242",
+    "or_daily": "153",
+    "ant_daily": "89",
+    "today_or": "395.48",
+    "today_ant": "103.39",
+    "today_combined": "498.87"
   },
   "tokens_models": [
     {
       "model": "claude-opus-4-6",
-      "cost": 466.58,
+      "cost": 435.96,
       "label": "Expected"
     },
     {
-      "model": "claude-sonnet-4.6",
-      "cost": 179.46,
-      "label": "Off-Policy"
-    },
-    {
       "model": "claude-opus-4.6",
-      "cost": 178.49,
+      "cost": 356.89,
       "label": "Personal"
     },
     {
+      "model": "claude-sonnet-4.6",
+      "cost": 227.71,
+      "label": "Off-Policy"
+    },
+    {
       "model": "deepseek-v4-pro",
-      "cost": 157.81,
+      "cost": 189.39,
       "label": "Fleet"
     },
     {
@@ -34,5 +37,29 @@
       "label": "Old/Drift"
     }
   ],
+  "tokens_today_by_model": {
+    "openrouter": {
+      "deepseek/deepseek-v4-flash": 0.5748279999999999,
+      "google/gemini-3.5-flash": 16.857840000000003,
+      "google/gemini-2.5-flash": 0.083273,
+      "anthropic/claude-sonnet-4.6": 121.17156600000001,
+      "anthropic/claude-opus-4.6": 178.40669599999998,
+      "z-ai/glm-5.2": 2.381427,
+      "anthropic/claude-opus-4.8": 30.097386,
+      "deepseek/deepseek-v4-pro": 44.568722,
+      "anthropic/claude-opus-4.8-fast": 0.00062,
+      "anthropic/claude-haiku-4.5": 0.004934,
+      "openai/gpt-4o-mini": 1.277989,
+      "openai/text-embedding-3-small": 0.001129,
+      "google/gemini-3.1-flash-lite-preview": 0.027376,
+      "google/gemini-2.5-flash-lite": 0.013057,
+      "minimax/minimax-m2.7": 0.014147
+    },
+    "anthropic": {
+      "claude-haiku-4-5-20251001": 0.0057,
+      "claude-opus-4-6": 102.06088725000001,
+      "claude-sonnet-4-6": 1.319715
+    }
+  },
   "tokens_dashboard_url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/"
 }
