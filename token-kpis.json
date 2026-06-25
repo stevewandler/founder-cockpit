@@ -2,7 +2,7 @@
   "tokens_total": {
     "month": "1,692",
     "last_month": "2,670",
-    "or_balance": "94",
+    "or_balance": "93",
     "combined_daily": "242",
     "or_daily": "153",
     "ant_daily": "89",
@@ -39,21 +39,21 @@
   ],
   "tokens_today_by_model": {
     "openrouter": {
-      "deepseek/deepseek-v4-flash": 0.5748279999999999,
-      "google/gemini-3.5-flash": 16.857840000000003,
-      "google/gemini-2.5-flash": 0.083273,
-      "anthropic/claude-sonnet-4.6": 121.17156600000001,
-      "anthropic/claude-opus-4.6": 178.40669599999998,
       "z-ai/glm-5.2": 2.381427,
-      "anthropic/claude-opus-4.8": 30.097386,
+      "anthropic/claude-sonnet-4.6": 121.17156600000001,
+      "google/gemini-2.5-flash-lite": 0.013057,
+      "deepseek/deepseek-v4-flash": 0.5748279999999998,
       "deepseek/deepseek-v4-pro": 44.568722,
+      "openai/gpt-4o-mini": 1.277989,
+      "google/gemini-3.1-flash-lite-preview": 0.027376,
+      "google/gemini-2.5-flash": 0.083273,
+      "minimax/minimax-m2.7": 0.014147,
+      "openai/text-embedding-3-small": 0.001129,
+      "anthropic/claude-opus-4.8": 30.097386,
+      "google/gemini-3.5-flash": 16.857840000000003,
       "anthropic/claude-opus-4.8-fast": 0.00062,
       "anthropic/claude-haiku-4.5": 0.004934,
-      "openai/gpt-4o-mini": 1.277989,
-      "openai/text-embedding-3-small": 0.001129,
-      "google/gemini-3.1-flash-lite-preview": 0.027376,
-      "google/gemini-2.5-flash-lite": 0.013057,
-      "minimax/minimax-m2.7": 0.014147
+      "anthropic/claude-opus-4.6": 178.40669599999998
     },
     "anthropic": {
       "claude-haiku-4-5-20251001": 0.0057,
