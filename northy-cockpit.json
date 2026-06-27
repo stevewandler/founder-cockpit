@@ -1,57 +1,63 @@
 {
   "meta": {
-    "last_updated": "2026-06-27T14:30:00-05:00",
-    "scan_type": "Business Hours Light Scan",
-    "northy_message": "Zig's Friday pipeline report is blocked — mcp.publish_skills is off. One command fixes it. ESC-10 proposal due today — no confirmation. Garland's Monday. Don't let the weekend become an architecture sprint."
+    "last_updated": "2026-06-27T21:30:00-05:00",
+    "scan_type": "Nightly Deep Scan",
+    "northy_message": "You granted Zig merge access today while he still can't reach HubSpot. One command fixes the root issue. ESC-10 deadline was today — no confirmation. Garland's Monday. Lubbock ISD just landed in Teela's lap. The ESC distribution engine is firing on three fronts. Don't let the weekend become an architecture sprint."
   },
   "act_now": [
     {
-      "id": "N-039",
-      "title": "Zig Pipeline Report BLOCKED — mcp.publish_skills Is Off",
-      "category": "Infrastructure / Sales",
-      "detail": "Zig's Friday pipeline report for Jan can't run. mcp.publish_skills is set to false in G-Brain config. Without it, Zig can't access hubspot or atlassian MCP tools. No HubSpot deal pulls. No Confluence reads. No pipeline data. The daily sales automation Steve and Jan set up this week is dead in the water. Zig posted in #sales_revenue-ninjas June 26.",
-      "action": "Run: gbrain config set mcp.publish_skills true. Then tell Zig to retry the Friday report. One minute.",
+      "id": "N-041",
+      "title": "You Granted Zig Merge Access — But He Can't Reach HubSpot. Fix the Root Issue First.",
+      "category": "Contradiction / Infrastructure",
+      "detail": "Steve granted Zig merge_or_release scoped to bookmarked-sales-dashboard today in #nero-brain-trust. Forward progress on the repo-push layer. But Zig still can't access HubSpot because mcp.publish_skills is false. His Friday pipeline report is dead. The daily sales automation is offline. The permission layer comes AFTER the access layer. Fix the door, then the permissions matter.",
+      "action": "Run: gbrain config set mcp.publish_skills true. Then reply to Zig's BLOCKED post in #sales_revenue-ninjas: 'Unblocked. Retry the Friday report.'",
       "status": "needs-steve"
     },
     {
       "id": "N-033",
-      "title": "ESC-10 Proposal — Deadline Is TODAY. No Confirmation It Was Sent.",
+      "title": "ESC-10 Proposal — Friday Night. Deadline Was Today. No Confirmation.",
       "category": "Critical Path",
-      "detail": "The workspace still says 'In progress' with every checklist item unchecked. No transcript, no G-Brain update, no Slack confirmation. Steve was active today doing infrastructure and agent work — no signal the proposal was finished and sent. If it's done, kill this. If not: send whatever exists tonight. Even a 2-page skeleton beats radio silence on deadline day. ESC-10 follow-up is July 29.",
-      "action": "Send whatever exists tonight. Perfection is the enemy — this was supposed to be a 'react-to-this' draft.",
+      "detail": "The workspace was 'In progress' at last check. No transcript, no G-Brain update, no Slack confirmation. Steve was active today doing agent infrastructure work — no signal the proposal was finished and sent. If it's done, kill this. If not: send whatever exists tonight. The follow-up is July 29 but a late proposal beats no proposal.",
+      "action": "Send whatever exists tonight. Even a 2-page skeleton beats radio silence on deadline day.",
       "status": "needs-steve"
     },
     {
       "id": "N-031",
-      "title": "Garland $140K — 3 Days. Jodi DM Still Unconfirmed.",
+      "title": "Garland $140K — 3 Days to June 30. Jodi DM Still Unconfirmed.",
       "category": "Deal / Pipeline",
-      "detail": "June 30 is Monday. No evidence Jodi Duron's email to Dr. Rick Lopez was sent. The Moak Casey lever is sitting there — she agreed in May to make the intro after Steve's Michael Ruiz debrief. That debrief happened. Nobody followed up. $140K deal expires in 3 days.",
+      "detail": "Monday is the deadline. No evidence Jodi Duron's email to Dr. Rick Lopez was sent. The Moak Casey lever is sitting there — she agreed in May to make the intro after Steve's Michael Ruiz debrief. That debrief happened. Nobody followed up. $140K deal expires in 3 days.",
       "action": "DM Jodi tonight or tomorrow morning: 'Jodi — we debriefed, and I'd love you to put in the word with Dr. Lopez now. Garland's quote deadline is Monday and Michael's been hard to reach.'",
       "status": "needs-steve"
     },
     {
       "id": "N-037",
-      "title": "CONTRADICTION: Zig's Target Is $1.5M/Aug 1. Yours Is $1M/Sept 1.",
+      "title": "CONTRADICTION: Zig's Target Is $1.5M/Aug 1. Yours Is $1M/Sept 1. 4th Scan.",
       "category": "Contradiction / Target Alignment",
-      "detail": "Still unresolved since June 25. Zig's weekly report references '$1.5M Commit by Aug 1.' Steve's strategy brief says '$1M by Sept 1.' Two different targets, two different deadlines. The team may be classifying deals based on the wrong goal.",
-      "action": "Clarify in #sales_revenue-ninjas: 'Canonical target is $1M by Sept 1.' Or confirm $1.5M/Aug 1 is real and update the strategy brief.",
+      "detail": "Still unresolved since June 25. Zig's weekly report uses $1.5M/Aug 1. Steve's strategy brief says $1M/Sept 1. If not clarified by Monday, Zig runs his report against the wrong number and so do Jan and Teela.",
+      "action": "Post in #sales_revenue-ninjas: 'Canonical target is $1M by Sept 1.' Or confirm $1.5M/Aug 1 is real and update the strategy brief.",
       "status": "needs-steve"
     },
     {
       "id": "N-032",
       "title": "Patrick Equity Cliff — 18 Days — Scale Firm Status Unknown",
       "category": "People / Governance",
-      "detail": "July 15 is hard. Board consent must be drafted and signed by all 5 board members. Patrick permanently loses vesting credit if this doesn't execute by July 15.",
+      "detail": "July 15 is hard. Board consent must be drafted and signed by all 5 board members. Patrick permanently loses vesting credit if this doesn't execute by July 15. No update on Scale Firm status.",
       "action": "Email or call Scale Firm. Confirm board consent resolution is drafted. Escalate to Charlie if not.",
       "status": "needs-steve"
     }
   ],
   "think_about": [
     {
-      "id": "N-038",
-      "title": "Jan's FB-048 Deep-Dive IS the Play 2 Spec — Review Before July 7 L10",
-      "category": "Connection / Product Strategy",
-      "urgency": "before July 7 L10"
+      "id": "N-042",
+      "title": "NEW OPPORTUNITY: Lubbock ISD — 21K Students, SB 13 Policy Rewrite. Not in Pipeline.",
+      "category": "Opportunity / Sales",
+      "urgency": "this-week"
+    },
+    {
+      "id": "N-043",
+      "title": "ESC Consortium Engine Firing on 3 Fronts — ESC9, ESC10, ESC16 All Active",
+      "category": "Connection / Strategy",
+      "urgency": "track-weekly"
     },
     {
       "id": "N-036",
@@ -60,38 +66,39 @@
       "urgency": "2 minutes"
     },
     {
-      "id": "N-029",
-      "title": "Engineering Succession — Nahuel Replacement Needed",
-      "category": "People / Risk",
-      "urgency": "this-week"
+      "id": "N-038",
+      "title": "Jan's FB-048 Deep-Dive IS the Play 2 Spec — Johnny Review Before July 7 L10",
+      "category": "Connection / Product Strategy",
+      "urgency": "before July 7 L10"
     }
   ],
   "health": {
-    "frame": { "status": "green", "note": "ESC-10 proposal is a $10M-level play. If it lands, 81 districts through co-op model. Frame is aligned." },
-    "floor": { "status": "green", "note": "No below-floor deals or commitments surfacing." },
-    "focus": { "status": "yellow", "note": "ESC-10 proposal deadline TODAY — no confirmation. Zig's pipeline report blocked by mcp.publish_skills config. Two infrastructure failures on a Friday. Systems-mode trap on watch for the weekend." },
-    "why": { "status": "green", "note": "No drift. Product quality and customer enablement conversations remain centered on WHY." }
+    "frame": { "status": "green", "note": "Three concurrent ESC consortium channels (ESC9, ESC10, ESC16). That's $10M-scale distribution architecture. Frame is aligned." },
+    "floor": { "status": "yellow", "note": "mcp.publish_skills: false is below the floor. A config flag blocking the CRO's primary tool is a bug, not a strategy." },
+    "focus": { "status": "yellow", "note": "Friday had heavy infrastructure/agent governance activity (permissions, access briefs, Gateway restarts) on proposal-deadline day. Systems-mode trap active. Weekend is the test — three calls before you open a terminal." },
+    "why": { "status": "green", "note": "Compliance Health cluster (FB-046/047/048) is WHY-first — making districts confident their collections are defensible. No drift detected." }
   },
   "cliff": [
     { "metric": "ARR Progress", "value": "~$175K+ banked", "target": "$1M by Sept 30", "gap": "~$825K", "status": "urgent" },
-    { "metric": "ESC-10 Proposal", "value": "Due TODAY", "target": "Sent to Shay + Lori", "gap": "today", "status": "urgent" },
     { "metric": "Zig Pipeline Report", "value": "BLOCKED", "target": "mcp.publish_skills = true", "gap": "1 command", "status": "urgent" },
+    { "metric": "ESC-10 Proposal", "value": "Due TODAY", "target": "Sent to Shay + Lori", "gap": "unconfirmed", "status": "urgent" },
     { "metric": "Garland ISD", "value": "$140K quote", "target": "Close by June 30", "gap": "3 days", "status": "urgent" },
     { "metric": "Patrick Equity Cliff", "value": "July 15", "target": "Board consent signed", "gap": "18 days", "status": "urgent" },
-    { "metric": "Cash", "value": "~$250K", "target": "~$178K projection", "gap": "~$72K/mo burn", "status": "watch" }
+    { "metric": "Cash", "value": "~$250K", "target": "Runway through Sept", "gap": "~$72K/mo burn", "status": "watch" }
   ],
   "commitments": {
     "steve_owes": [
-      { "what": "Run: gbrain config set mcp.publish_skills true — unblocks Zig's pipeline report", "to": "Zig / Jan / Sales", "date": "Today", "status": "urgent" },
-      { "what": "ESC-10 proposal — send whatever exists tonight. Deadline is TODAY.", "to": "ESC-10 / Jan", "date": "Jun 27 (TODAY)", "status": "urgent" },
+      { "what": "Run: gbrain config set mcp.publish_skills true — unblocks Zig's pipeline report. Fix this BEFORE the merge access layer.", "to": "Zig / Jan / Sales", "date": "Tonight", "status": "urgent" },
+      { "what": "ESC-10 proposal — send whatever exists tonight. Deadline was TODAY.", "to": "ESC-10 / Jan", "date": "Jun 27 (TODAY)", "status": "urgent" },
       { "what": "DM Jodi at Moak Casey re: Garland superintendent intro", "to": "Jodi Duron, Moak Casey", "date": "ASAP before June 30", "status": "urgent" },
-      { "what": "Clarify canonical target: $1M Sept 1 or $1.5M Aug 1 — post in #sales_revenue-ninjas", "to": "Zig / Jan / Teela", "date": "Today", "status": "urgent" },
+      { "what": "Clarify canonical target: $1M Sept 1 or $1.5M Aug 1 — post in #sales_revenue-ninjas", "to": "Zig / Jan / Teela", "date": "Before Monday", "status": "urgent" },
       { "what": "Call Scale Firm — confirm Patrick board consent drafted", "to": "Scale Firm", "date": "Before July 15", "status": "urgent" },
       { "what": "Approve HubSpot token injection for Atlas (reply in #ai-ceo-team)", "to": "Dewey / Raju", "date": "Anytime", "status": "urgent" },
       { "what": "Answer Ram's enrollment banding question (unblocks Mabel extract)", "to": "Ram (Slack DM)", "date": "ASAP", "status": "urgent" }
     ],
     "team_owes": [
       { "who": "Jan", "what": "ESC-10 proposal collaboration", "date": "Jun 27", "status": "open" },
+      { "who": "Teela", "what": "Lubbock ISD lead (21K students, SB 13 rewrite) — get into HubSpot pipeline", "date": "ASAP", "status": "new" },
       { "who": "Johnny", "what": "Delivery target for BOOK-1503 / BOOK-1501 (FB-048 core)", "date": "TBD", "status": "open" },
       { "who": "Jan", "what": "Methodology fully documented to Confluence + GitHub", "date": "Jun 24", "status": "done" }
     ]
@@ -125,12 +132,12 @@
   },
   "sales": {
     "summary": {
-      "active_pipeline": "TX new (~$546K) + Renewals (~$516K)",
-      "deals_closing_this_month": "Garland ($140K June 30), Elgin confirmed ($18,402), renewals wave",
+      "active_pipeline": "TX new (~$546K) + Renewals (~$516K) + NEW: Lubbock ISD (21K students, SB 13 trigger)",
+      "deals_closing_this_month": "Garland ($140K June 30), Elgin confirmed ($18,402), renewals wave. Lubbock ISD surfaced by Teela June 27.",
       "stalled_deals": "Utah SEA ($1.3M FY27 — parked), Michael Ruiz/Garland unreachable since June 10",
-      "imta_districts": "Mesquite, Garland"
+      "imta_districts": "Mesquite, Garland, ESC consortium districts"
     },
-    "note": "⚠️ Zig's Friday pipeline report BLOCKED — mcp.publish_skills is false. No HubSpot MCP access. One config change fixes it. Also: target contradiction still unresolved ($1.5M/Aug 1 vs $1M/Sept 1). Jan methodology COMPLETE (June 24).",
+    "note": "⚠️ Zig's Friday pipeline report BLOCKED — mcp.publish_skills is false. Steve granted merge_or_release today but root access still blocked. Zig's outbound report shows strong activity: 67 outbound, 57 inbound replies, ESC9+ESC16 consortium coordination active. Lubbock ISD (21K students) surfaced by Teela — not in HubSpot yet. Target contradiction still unresolved ($1.5M/Aug 1 vs $1M/Sept 1). Jan methodology COMPLETE (June 24).",
     "links": [
       { "label": "Sales Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/" },
       { "label": "Jan's Methodology (Confluence)", "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017" }
@@ -138,12 +145,12 @@
   },
   "cs": {
     "summary": {
-      "note": "FB-048 active: Jan's deep-dive surfaced District Insights Layer proposal — five-score scorecard + peer benchmarking with Ferris ISD as pilot. 53% of Ferris's V2 decisions lack documented rationale. Zero telemetry on migrated districts. Atlas CS still awaiting HubSpot token (one admin action). Houston onboarding cohort (10 tickets) dormant. Priya's weekly synthesis: 12 new entries, Compliance Health Cluster dominant, 0 closed loops."
+      "note": "FB-048 active: Jan's deep-dive surfaced District Insights Layer — five-score scorecard + peer benchmarking with Ferris ISD pilot. 53% of Ferris V2 decisions lack rationale. Atlas CS awaiting HubSpot token (5th ask). Priya weekly: 12 entries, Compliance Health dominant, 0 closed loops (Scout bottleneck). Houston onboarding dormant."
     }
   },
   "product": {
     "summary": {
-      "note": "Scout completed 3 epics: V2KAN-240, V2KAN-194, V2KAN-136. Jan's FB-048 District Insights Layer maps directly to Play 2 (Collection Benchmarking) — concrete spec with pilot dataset. Johnny should review before July 7 L10. BOOK-1503/1501 open and unassigned. V2 login page gaps: Microsoft auth missing, broken support link, copyright 2024. July = AI architecture sprint. gstack = reference architecture."
+      "note": "Scout: 3 epics done (V2KAN-240, 194, 136). Jan's FB-048 District Insights Layer = Play 2 spec with Ferris pilot dataset. Johnny review before July 7 L10. BOOK-1503/1501 open. V2 login page gaps tracked by Priya. July = AI architecture sprint. gstack = reference architecture."
     }
   },
   "strategy_decisions": [
@@ -151,15 +158,17 @@
     { "id": "D-DASH", "title": "All dashboards moved out of roi-calculator. Zig owns sales. Northy owns architecture.", "status": "active" },
     { "id": "D-JULY", "title": "July = AI architecture sprint. L10 July 7 to align team.", "status": "active" },
     { "id": "D-INDIA", "title": "India engineering hire: $3-4K/month + $300-400 markup. 30-day eval.", "status": "active" },
+    { "id": "D-ZIG-MERGE", "title": "Zig merge_or_release granted (scoped to bookmarked-sales-dashboard). June 27.", "status": "done" },
     { "id": "D-JAN-ZIG", "title": "Jan's methodology → Zig. Dashboard weights canonical. Quote Requested = 60%. June 24.", "status": "done" }
   ],
   "strategy_open": [
-    { "id": "O-TARGET", "title": "⚠️ CONTRADICTION: $1.5M/Aug 1 (Zig) vs $1M/Sept 1 (Steve). Still unresolved.", "status": "urgent" },
-    { "id": "O-GARLAND", "title": "Garland: Michael Ruiz unreachable. Moak Casey lever available. June 30 deadline — 3 days.", "status": "urgent" },
+    { "id": "O-ZIG-PIPELINE", "title": "⚠️ Zig pipeline BLOCKED — mcp.publish_skills false. Steve granted merge access while root is still broken. Fix root first.", "status": "urgent" },
+    { "id": "O-TARGET", "title": "⚠️ CONTRADICTION: $1.5M/Aug 1 (Zig) vs $1M/Sept 1 (Steve). 4th scan. Resolve before Monday.", "status": "urgent" },
+    { "id": "O-GARLAND", "title": "Garland: Michael Ruiz unreachable. Moak Casey lever available. June 30 — 3 days.", "status": "urgent" },
     { "id": "O-PATRICK-EQUITY", "title": "Patrick equity cliff July 15 — 18 days. Scale Firm status unknown.", "status": "urgent" },
-    { "id": "O-ESC10-PROPOSAL", "title": "ESC-10 proposal due TODAY. No confirmation it was sent.", "status": "urgent" },
-    { "id": "O-ZIG-PIPELINE", "title": "Zig pipeline report BLOCKED — mcp.publish_skills is off. One command fixes it.", "status": "urgent" },
-    { "id": "O-ATLAS-HUBSPOT", "title": "Atlas needs HubSpot token injection. 5 scans this is live. One sentence from Steve.", "status": "urgent" },
+    { "id": "O-ESC10-PROPOSAL", "title": "ESC-10 proposal deadline TODAY. No confirmation it was sent.", "status": "urgent" },
+    { "id": "O-LUBBOCK", "title": "Lubbock ISD (21K students, SB 13 trigger) surfaced by Teela. Not in HubSpot. Needs pipeline entry.", "status": "new" },
+    { "id": "O-ATLAS-HUBSPOT", "title": "Atlas needs HubSpot token injection. 5th ask. One sentence from Steve.", "status": "urgent" },
     { "id": "O-NAHUEL", "title": "Nahuel succession: replacement candidate needed before ending engagement.", "status": "open" },
     { "id": "O-COMMISSION", "title": "Commission structure for zero-to-paid conversions — define before July.", "status": "open" }
   ],
@@ -197,28 +206,29 @@
       "priority": "Queue for review — read before July 7 L10"
     },
     {
+      "id": "N-040",
+      "source": "Dan Huberty / SBOE June 2026 Meeting",
+      "title": "HB 1605 — Maynard/Hickman Amendment Failed. Policy Direction Clear.",
+      "pattern": "Amendment would have required districts to post locally-selected literary works on website. Failed at full board vote (June 26). Concept likely to resurface in 90th Legislature (2027). SB 13 bridge (§33.024) remains the gap to watch.",
+      "applies_to": "Play 1 (SB 13 Compliance) + Play 2 (Collection Benchmarking). Policy direction clear even though this vehicle failed.",
+      "priority": "Monitor — concept failed but expected to return"
+    },
+    {
       "id": "N-038",
       "source": "Jan Gilboy (#product-feedback, June 26)",
       "title": "District Insights Layer — Five-Score Scorecard + Peer Benchmarking",
-      "pattern": "Adoption, Completion, Defensibility, Collection Health, Peer Percentile — all measured and benchmarked against same-size cohorts. Ferris ISD as ready-made pilot dataset.",
-      "applies_to": "Play 2 (Collection Benchmarking) — this IS the product spec. Johnny should review before July 7 L10.",
+      "pattern": "Adoption, Completion, Defensibility, Collection Health, Peer Percentile. Ferris ISD as pilot dataset. This IS the Play 2 product spec.",
+      "applies_to": "Play 2 (Collection Benchmarking). Johnny should review before July 7 L10.",
       "priority": "Queue for review"
-    },
-    {
-      "id": "N-040",
-      "source": "Dan Huberty / SBOE June 2026 Meeting — live intel",
-      "title": "HB 1605 — Maynard/Hickman Amendment Failed. Policy Direction Still Clear.",
-      "pattern": "SBOE final vote June 26, 2026. Amendment would have required districts/charters to post locally-selected literary works on website. Failed at full board vote despite committee support (8-3). Literary Works Lists adopted without it. Concept likely to resurface — transparency appetite on SBOE is real. SB 13 bridge (§33.024) remains the gap to watch.",
-      "applies_to": "Play 1 (SB 13 Compliance) + Play 2 (Collection Benchmarking). The policy direction is clear even though this vehicle failed. Watch for resurface in 90th Legislature (2027) or future SBOE rulemaking. Confluence: /spaces/CH/pages/158597121.",
-      "priority": "Monitor — concept failed but expected to return"
     }
   ],
   "resolved": [
-    { "id": "JAN-METHODOLOGY", "outcome": "Jan confirmed methodology documented to Confluence + GitHub June 24. Dashboard weights canonical. Quote Requested = 60%. Zig clear to run daily cron.", "when": "2026-06-24" },
-    { "id": "FB-048-INTAKE", "outcome": "V1 book clearance gap logged, classified. Jan's deep-dive surfaced District Insights Layer proposal. Priya intake complete. FB-046/047/048 now linked as Compliance Health cluster.", "when": "2026-06-26" },
-    { "id": "SCOUT-EPICS", "outcome": "Scout auto-completed 3 epics June 25: V2KAN-240, V2KAN-194, V2KAN-136.", "when": "2026-06-25" },
+    { "id": "D-ZIG-MERGE", "outcome": "Steve authorized Zig merge_or_release scoped to bookmarked-sales-dashboard. June 27.", "when": "2026-06-27" },
+    { "id": "GITHUB-BRIEF", "outcome": "Steve posted GitHub Access Brief for agent team. Hermes-Bookmarked-Team account. 6 agents have GITHUB_TOKEN.", "when": "2026-06-27" },
+    { "id": "JAN-METHODOLOGY", "outcome": "Jan confirmed methodology documented to Confluence + GitHub June 24. Dashboard weights canonical. Quote Requested = 60%.", "when": "2026-06-24" },
+    { "id": "FB-048-INTAKE", "outcome": "V1 clearance gap logged. Jan's deep-dive surfaced District Insights Layer. Priya intake complete. FB-046/047/048 linked as cluster.", "when": "2026-06-26" },
+    { "id": "SCOUT-EPICS", "outcome": "Scout auto-completed 3 epics: V2KAN-240, V2KAN-194, V2KAN-136.", "when": "2026-06-25" },
     { "id": "N-027", "outcome": "Raju/Steve India hiring meeting done. $3-4K/mo + 30-day eval.", "when": "2026-06-24" },
-    { "id": "N-015", "outcome": "ESC-16 exclusivity resolved. No conflict. Separate MOUs.", "when": "2026-06-23" },
     { "id": "N-023", "outcome": "Midland ISD $77K PO confirmed. Zero-to-paid conversion.", "when": "2026-06-22" }
   ]
 }
