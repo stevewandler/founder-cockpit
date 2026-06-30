@@ -17,9 +17,9 @@
     --mono:'DM Mono',monospace;--serif:'DM Serif Display',serif;--sans:'DM Sans',sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:var(--sans);background:var(--paper);color:var(--ink);}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);padding-top:161px;}
 
-  .header{background:var(--ink);padding:18px 40px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold);}
+  .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--ink);padding:18px 40px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold);}
   .hdr-l{display:flex;align-items:center;gap:14px;}
   .hdr-icon{font-size:1.6rem;}
   .hdr-title{font-family:var(--serif);font-size:1.6rem;color:var(--paper);line-height:1;}
@@ -28,14 +28,14 @@
   .hdr-updated{font-family:var(--mono);font-size:.55rem;color:rgba(249,247,242,.4);text-transform:uppercase;letter-spacing:.08em;}
   .hdr-time{font-family:var(--serif);font-size:.9rem;color:rgba(249,247,242,.7);margin-top:2px;}
 
-  .northy-bar{background:var(--ink-2);padding:14px 40px;display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid rgba(255,255,255,.06);}
+  .northy-bar{position:fixed;top:66px;left:0;right:0;z-index:999;background:var(--ink-2);padding:14px 40px;display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid rgba(255,255,255,.06);}
   .nb-icon{font-size:1.2rem;flex-shrink:0;}
   .nb-label{font-family:var(--mono);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);margin-bottom:4px;}
   .nb-msg{font-size:.78rem;line-height:1.5;color:rgba(249,247,242,.85);}
   .nb-wamm{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;background:var(--gold);color:white;border:none;padding:7px 14px;cursor:pointer;white-space:nowrap;border-radius:2px;margin-left:auto;}
 
   /* NAV TABS */
-  .nav-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);background:white;overflow-x:auto;}
+  .nav-tabs{position:fixed;top:125px;left:0;right:0;z-index:999;display:flex;gap:0;border-bottom:1px solid var(--border);background:white;overflow-x:auto;}
   .nav-tab{font-family:var(--mono);font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding:10px 14px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .15s;}
   .nav-tab:hover{color:var(--ink);background:var(--paper);}
   .nav-tab.active{color:var(--gold);border-bottom-color:var(--gold);font-weight:500;}
@@ -226,7 +226,14 @@
 <div class="tab-content" id="tab-district-intel">
   <div class="main">
     <div class="left">
-      <div class="panel"><div class="ph"><div class="pt">District Intelligence Dashboards</div></div><div class="pb" id="districtIntelLinks">Loading...</div></div>
+      <div class="panel" id="di-links-panel"><div class="ph"><div class="pt">District Intelligence Dashboards</div></div><div class="pb" id="districtIntelLinks">Loading...</div></div>
+      <div class="panel" id="di-iframe-panel" style="display:none;">
+        <div class="ph" style="display:flex;align-items:center;gap:8px;">
+          <button onclick="closeDI()" style="font-family:var(--sans);font-size:.65rem;font-weight:600;color:var(--gold);background:none;border:1px solid var(--gold);border-radius:4px;padding:3px 10px;cursor:pointer;">← Back</button>
+          <span class="pt">District Intelligence</span>
+        </div>
+        <div class="pb" style="padding:0;"><iframe id="di-iframe" src="" allow="fullscreen" style="width:100%;height:calc(100vh - 200px);border:none;"></iframe></div>
+      </div>
     </div>
     <div class="right">
       <div class="panel"><div class="ph"><div class="pt">About This Tab</div></div><div class="pb"><div style="padding:12px;font-size:.7rem;color:var(--ink-3);line-height:1.5;">Real-time intelligence on Texas districts — board meeting minutes, media coverage, superintendent movements, and IMTA funding status. Built and maintained by the Bookmarked OS pipeline in <code>bookmarked-os/claude-output/district-intelligence-portal/</code>.</div></div>
