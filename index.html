@@ -441,11 +441,27 @@ function showTab(tab, el) {
   document.getElementById('tab-' + tab).classList.add('active');
   el.classList.add('active');
   activeTab = tab;
+  closeDI();
   // Load token data fresh when tab is clicked
   if (tab === 'tokens') {
     tokenChartsRendered = false;  // reset so charts redraw if needed
     renderTokens();
   }
+}
+
+function openDI(url) {
+  document.getElementById('di-links-panel').style.display = 'none';
+  document.getElementById('di-iframe-panel').style.display = '';
+  document.getElementById('di-iframe').src = url;
+}
+
+function closeDI() {
+  var links = document.getElementById('di-links-panel');
+  var iframePanel = document.getElementById('di-iframe-panel');
+  var iframe = document.getElementById('di-iframe');
+  if (links) links.style.display = '';
+  if (iframePanel) iframePanel.style.display = 'none';
+  if (iframe) iframe.src = '';
 }
 
 function render() {
@@ -567,7 +583,7 @@ function renderDistrictIntel() {
       route = '/' + file.replace('.html', '');
     }
     const vercelUrl = 'https://bookmarked-district-intelligence.vercel.app' + route;
-    return '<a href="' + vercelUrl + '" target="_blank" rel="noopener" style="display:block;padding:10px 12px;font-size:.72rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);"><strong>' + d.label + ' →</strong><br><span style="color:var(--ink-3);font-size:.62rem;">' + d.description + '</span></a>';
+    return '<a href="javascript:void(0)" onclick="openDI(\'' + vercelUrl + '\')" style="display:block;padding:10px 12px;font-size:.72rem;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(0,0,0,.03);"><strong>' + d.label + ' →</strong><br><span style="color:var(--ink-3);font-size:.62rem;">' + d.description + '</span></a>';
   }).join('') : '<div style="padding:20px;text-align:center;color:var(--ink-3);font-size:.72rem;">District intelligence dashboards loading...</div>';
 }
 
