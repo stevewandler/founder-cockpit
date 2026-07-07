@@ -1,11 +1,11 @@
 {
   "tokens_total": {
-    "month": "1,472",
+    "month": "1,421",
     "last_month": "2,670",
-    "or_balance": "179",
-    "combined_daily": "210",
-    "or_daily": "149",
-    "ant_daily": "61",
+    "or_balance": "131",
+    "combined_daily": "203",
+    "or_daily": "137",
+    "ant_daily": "66",
     "today_or": "0.00",
     "today_ant": "0.00",
     "today_combined": "0.00"
@@ -17,18 +17,18 @@
       "label": "Escalation"
     },
     {
-      "model": "deepseek-v4-pro",
-      "cost": 331.18,
-      "label": "Fleet"
-    },
-    {
       "model": "claude-haiku-4-5-20251001",
-      "cost": 243.17,
+      "cost": 280.31,
       "label": "Expected"
     },
     {
+      "model": "deepseek-v4-pro",
+      "cost": 248.86,
+      "label": "Fleet"
+    },
+    {
       "model": "claude-sonnet-4-6",
-      "cost": 99.84,
+      "cost": 92.57,
       "label": "Expected"
     },
     {
