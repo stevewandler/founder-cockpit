@@ -1,14 +1,14 @@
 {
   "tokens_total": {
-    "month": "444",
+    "month": "437",
     "last_month": "2,670",
-    "or_balance": "66",
-    "combined_daily": "63",
+    "or_balance": "56",
+    "combined_daily": "62",
     "or_daily": "62",
-    "ant_daily": "1",
-    "today_or": "104.06",
+    "ant_daily": "0",
+    "today_or": "0.00",
     "today_ant": "0.00",
-    "today_combined": "104.07"
+    "today_combined": "0.00"
   },
   "tokens_models": [
     {
@@ -32,26 +32,14 @@
       "label": "Fleet"
     },
     {
-      "model": "claude-haiku-4-5-20251001",
-      "cost": 6.61,
-      "label": "Expected"
+      "model": "claude-sonnet-4.6",
+      "cost": 6.0,
+      "label": "Personal"
     }
   ],
   "tokens_today_by_model": {
-    "openrouter": {
-      "deepseek/deepseek-v4-pro": 57.979056,
-      "deepseek/deepseek-v4-flash": 10.333919,
-      "z-ai/glm-4.6v": 0.256183,
-      "minimax/minimax-m2.7": 0.06396,
-      "z-ai/glm-5.2": 16.283236000000002,
-      "openai/text-embedding-3-small": 0.002179,
-      "anthropic/claude-haiku-4.5": 16.087471,
-      "google/gemini-3-flash-preview": 0.047746,
-      "google/gemini-2.5-flash": 3.0096
-    },
-    "anthropic": {
-      "claude-haiku-4-5-20251001": 0.003896
-    }
+    "openrouter": {},
+    "anthropic": {}
   },
   "tokens_dashboard_url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/"
 }
