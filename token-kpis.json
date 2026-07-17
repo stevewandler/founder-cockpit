@@ -1,45 +1,59 @@
 {
   "tokens_total": {
-    "month": "437",
+    "month": "442",
     "last_month": "2,670",
-    "or_balance": "56",
-    "combined_daily": "62",
-    "or_daily": "62",
+    "or_balance": "489",
+    "combined_daily": "63",
+    "or_daily": "63",
     "ant_daily": "0",
-    "today_or": "0.00",
+    "today_or": "94.37",
     "today_ant": "0.00",
-    "today_combined": "0.00"
+    "today_combined": "94.37"
   },
   "tokens_models": [
     {
       "model": "deepseek-v4-pro",
-      "cost": 253.37,
+      "cost": 268.88,
       "label": "Fleet"
-    },
-    {
-      "model": "claude-haiku-4.5",
-      "cost": 84.91,
-      "label": "Personal"
     },
     {
       "model": "glm-5.2",
-      "cost": 52.91,
+      "cost": 75.96,
       "label": "Off-Policy"
     },
     {
+      "model": "claude-haiku-4.5",
+      "cost": 61.34,
+      "label": "Personal"
+    },
+    {
       "model": "deepseek-v4-flash",
-      "cost": 34.22,
+      "cost": 25.23,
       "label": "Fleet"
     },
     {
-      "model": "claude-sonnet-4.6",
-      "cost": 6.0,
-      "label": "Personal"
+      "model": "gemini-2.5-flash",
+      "cost": 4.05,
+      "label": "Off-Policy"
     }
   ],
   "tokens_today_by_model": {
-    "openrouter": {},
-    "anthropic": {}
+    "openrouter": {
+      "deepseek/deepseek-v4-pro": 52.27804200000001,
+      "openai/text-embedding-3-small": 0.004272,
+      "deepseek/deepseek-v4-flash": 1.820723,
+      "google/gemini-2.5-flash-lite": 0.000886,
+      "x-ai/grok-4.5": 0.036098,
+      "z-ai/glm-5.2": 28.515764,
+      "z-ai/glm-4.6v": 1.71806,
+      "minimax/minimax-m2.7": 0.015863,
+      "openai/gpt-4o-mini": 0.00093,
+      "anthropic/claude-haiku-4.5": 9.945753,
+      "google/gemini-2.5-flash": 0.031495
+    },
+    "anthropic": {
+      "claude-haiku-4-5-20251001": 0.00049
+    }
   },
   "tokens_dashboard_url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/"
 }
