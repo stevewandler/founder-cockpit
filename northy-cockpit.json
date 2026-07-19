@@ -1,53 +1,99 @@
 {
   "meta": {
-    "last_updated": "2026-07-17T21:30:00-05:00",
+    "last_updated": "2026-07-18T21:45:00-05:00",
     "scan_type": "Nightly Deep Scan",
-    "northy_message": "Heavy infrastructure day. You shipped Design/Brand v2 to the whole fleet, reversed the self-modification policy, and got all 7 C-levels aligned. But Zig's blind — no live HubSpot data since July 6, and 51 renewal districts are still in 'To Be Renewed' with 6 weeks left. That's the priority, not whether Pixel has GitHub access."
+    "northy_message": "Quiet Saturday. One piece of Garry Tan intel for Monday morning: his keynote on institutional memory as the AI moat. Also — cockpit still uses three colors you retired yesterday. That's the one thing that needs your call."
   },
   "act_now": [
+    {
+      "id": "N-041",
+      "title": "Cockpit uses three retired colors — #12A38C, #107569, #101828",
+      "category": "contradiction",
+      "detail": "Your July 17 Fleet Directive retires #12A38C, #107569, #0D5A52. Cockpit still uses them. Brand canon moved to #15B79E / #0E766A / #111928. System font stack replaces DM Sans.",
+      "action": "Decide: (a) align cockpit to brand canon v4.0.0, or (b) declare cockpit intentionally distinct. If (a), Forge does a CSS search-and-replace.",
+      "status": "needs-steve"
+    },
     {
       "id": "N-034",
       "title": "Zig is flying blind — HubSpot pipeline data stale since July 6",
       "category": "drift",
-      "detail": "Zig's hubspot skill is missing from runtime. Last live pull July 6. 51 of 68 renewal districts (72%) still in 'To Be Renewed.' No Jun/Jul closed-won data. September 1 is 6 weeks away and we're reading pipeline from cached May 13 brain data. This is not a 'Woz will fix it' situation — this is a 'Steve needs to unblock it' situation.",
-      "action": "Direct Raju/Woz: restore Zig's HubSpot MCP access today. Live pipeline data is before any other fleet work.",
+      "detail": "Zig's hubspot skill missing from runtime. Last live pull July 6. 51 of 68 renewal districts (72%) still in 'To Be Renewed.' 43 days to Sept 1.",
+      "action": "Direct Raju/Woz: restore Zig's HubSpot MCP access Monday. Live pipeline data before any other fleet work.",
       "status": "needs-steve"
     },
     {
       "id": "N-035",
       "title": "SIS roster bug blocking 5 districts — Granger can't go live",
       "category": "opportunity",
-      "detail": "Large SFTP uploads timeout mid-processing. Granger: 345 students in, 1,440 of 4,418 enrollments failed. Forney: 0 students across 30 campuses. Any district >1.5MB roster file is blocked. Product feedback flagged this morning — needs Scout priority. Proposed deadline: Tue Jul 21.",
-      "action": "Confirm with Sarah it's a blocker, route to Scout with owner + deadline. This is a go-live blocker for new districts.",
+      "detail": "Large SFTP uploads timeout mid-processing. Granger: 1,440 of 4,418 enrollments failed. Forney: 0 students across 30 campuses.",
+      "action": "Confirm with Sarah it's a blocker, route to Scout with owner + deadline.",
       "status": "needs-steve"
     },
     {
-      "id": "N-036",
-      "title": "Design/Brand v2 rollout — need two-tier ACK closure from Ford",
+      "id": "N-084",
+      "title": "Systems-Mode Trap: DAY 12 — zero revenue activity",
+      "category": "drift",
+      "detail": "Day 12 since last revenue conversation. Cash $97.7K. 43 days to Sept 1. Saturday quiet is expected — Monday is the test.",
+      "action": "Monday: three revenue actions before anything else. Text Jodi. Call one superintendent.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-092",
+      "title": "Both revenue Slack channels archived — no revenue coordination surface",
+      "category": "risk",
+      "detail": "#sales_revenue-ninjas and #renewal-gtm-alignment both archived June 29. Revenue coordination has no Slack home.",
+      "action": "Reactivate one revenue channel or state in #ai-ceo-team that revenue coordination lives there.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-059",
+      "title": "Revenue target contradiction: Zig at $1.5M vs Steve at $1M — 21 days",
+      "category": "contradiction",
+      "detail": "Zig's last report uses '$1.5M by Aug 1.' Real target is $1M by Sept 1. 21 days uncorrected.",
+      "action": "Tell Zig: 'Target is $1M by Sept 1. Recompute.' Ten seconds.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-032",
+      "title": "Patrick equity cliff OVERDUE +5 — 30 days of lag",
       "category": "commitment",
-      "detail": "All 7 C-levels confirmed receipt. But tier-2 (skills-cite-readable-canon) is blocked on Woz's G-Brain source-scoping fix. Ford needs to report completion with both tiers distinguished. Steve added Beacon to the cascade — training material must include brand canon.",
-      "action": "Ask Ford for the two-tier completion report. Confirm Beacon got the onboarding material directive.",
+      "detail": "July 15 passed. Now July 18. No equity conversation. 30 days of lag time.",
+      "action": "Call him Monday. Use STATE. Be 100% honest AND 100% respectful.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-080",
+      "title": "Natasha renewals unassigned — 63 days, ~$42K ILTexas + 5 others",
+      "category": "risk",
+      "detail": "ILTexas $42K + 5 other renewals. Over two months unassigned. Revenue sitting on a shelf.",
+      "action": "Assign to Teela or Jan Monday.",
       "status": "needs-steve"
     }
   ],
   "think_about": [
     {
-      "id": "N-037",
-      "title": "Self-modification policy reversal — same-day flip",
-      "category": "drift",
+      "id": "N-093",
+      "title": "Garry Tan: 'Institutional memory, not model access, is the AI-native moat'",
+      "category": "intel",
+      "urgency": "high"
+    },
+    {
+      "id": "N-090",
+      "title": "Garry Tan: gstack supports Hermes + gbrain natively",
+      "category": "intel",
       "urgency": "medium"
+    },
+    {
+      "id": "N-094",
+      "title": "G-Brain autopilot cycles cancelling — 191 lock.lost errors, zero completing",
+      "category": "infrastructure",
+      "urgency": "low"
     },
     {
       "id": "N-038",
       "title": "51 renewal districts still 'To Be Renewed' — $363K at risk",
       "category": "connection",
       "urgency": "high"
-    },
-    {
-      "id": "N-039",
-      "title": "Systems-mode trap watch — heavy agent infrastructure day",
-      "category": "drift",
-      "urgency": "low"
     },
     {
       "id": "N-040",
@@ -59,34 +105,41 @@
   "health": {
     "frame": {
       "status": "yellow",
-      "note": "Fleet architecture is getting stronger — v2 brand rollout, outcome-based ticket standard deployed. But $1M-by-Sept-1 requires selling, not system-building. Zig's blind and 51 renewals are parked."
+      "note": "Brand unification is strong. But DAY 12 of systems-mode. 43 days to Sept 1."
     },
     "floor": {
-      "status": "green",
-      "note": "No floor violations detected today. All work is $10M-scale appropriate."
+      "status": "yellow",
+      "note": "Two revenue channels archived. Cockpit uses retired colors. No floor violations on deals."
     },
     "focus": {
-      "status": "yellow",
-      "note": "Today was heavily agent infrastructure (credential swaps, GitHub access, model selection, brand governance). Productive — but pipeline is stalled behind an access issue Steve could unblock in 5 minutes."
+      "status": "red",
+      "note": "Systems-mode DAY 12. Monday must be revenue-first. The pipeline doesn't close itself."
     },
     "why": {
       "status": "green",
-      "note": "Faith's moment is embedded in the brand canon now — `bookmarked-founder` is one of the five CEO-locked pages. The WHY is in the architecture."
+      "note": "Atoms show mission clarity. Follett positioning is sharp. The WHY is embedded."
     }
   },
   "cliff": [
     {
       "metric": "Days to September 1",
-      "value": "46",
+      "value": "43",
       "target": "0",
-      "gap": "46 days remain",
+      "gap": "43 days remain",
       "status": "urgent"
     },
     {
       "metric": "Pipeline data freshness",
-      "value": "Jul 6 (11 days stale)",
+      "value": "Jul 6 (12 days stale)",
       "target": "Daily",
       "gap": "Zig's HubSpot MCP is missing — blind on pipeline",
+      "status": "urgent"
+    },
+    {
+      "metric": "Cash on hand",
+      "value": "$97.7K",
+      "target": ">$0",
+      "gap": "~4 weeks runway at current burn",
       "status": "urgent"
     },
     {
@@ -102,17 +155,29 @@
       {
         "what": "Unblock Zig's HubSpot MCP access",
         "to": "Raju/Woz/Zig",
-        "date": "2026-07-18",
+        "date": "2026-07-21",
         "status": "urgent"
       },
       {
-        "what": "Approve/deny SIS roster bug as blocker for Scout",
-        "to": "Sarah/Scout",
-        "date": "2026-07-18",
+        "what": "Call Patrick about equity cliff",
+        "to": "Patrick Reid",
+        "date": "2026-07-21",
+        "status": "urgent"
+      },
+      {
+        "what": "Assign Natasha renewals to owner",
+        "to": "Teela or Jan",
+        "date": "2026-07-21",
         "status": "open"
       },
       {
-        "what": "ESC 10 follow-up call (July 29, 9am CT)",
+        "what": "Three revenue actions (text Jodi, call superintendent)",
+        "to": "Self",
+        "date": "2026-07-20",
+        "status": "urgent"
+      },
+      {
+        "what": "ESC 10 follow-up call",
         "to": "ESC 10 / Lori Aden",
         "date": "2026-07-29",
         "status": "open"
@@ -121,19 +186,19 @@
     "team_owes": [
       {
         "who": "Ford",
-        "what": "Two-tier ACK completion report for Design/Brand v2 (receipt + skills-citation)",
-        "date": "2026-07-18",
+        "what": "Two-tier ACK completion report for Design/Brand v2",
+        "date": "2026-07-21",
         "status": "pending"
       },
       {
         "who": "Woz",
-        "what": "G-Brain source-scoping fix — add employees source to agent read scope",
-        "date": "2026-07-18",
+        "what": "G-Brain source-scoping fix + Zig's HubSpot MCP restore",
+        "date": "2026-07-21",
         "status": "urgent"
       },
       {
         "who": "Raju",
-        "what": "Verify Pixel/Johnny vision-capable LLM models for screenshot review",
+        "what": "Verify Pixel/Johnny vision-capable LLM models",
         "date": "2026-07-17",
         "status": "open"
       }
@@ -156,10 +221,26 @@
   "resolved": [],
   "intel": [
     {
+      "id": "FI-004",
+      "source": "Garry Tan / YC Keynote",
+      "title": "Institutional Memory, Not Model Access, Is the AI-Native Moat",
+      "pattern": "The durable asset isn't model access (rented). It's accumulated skills, memory, processes, and ability to select relevant context. 'Skill file = employee. Resolver table = org chart.' Never do one-off work — skillify it. GBrain at 220K+ pages, 66 cron jobs.",
+      "applies_to": "Direct validation of Steve's agent fleet approach. The founding trio (Steve+Northy+Forge) maps perfectly to Garry's 'workforce made of markdown.' Every Bookmarked agent skill is a moat-building asset.",
+      "priority": "Queue for review"
+    },
+    {
       "id": "FI-003",
+      "source": "Garry Tan / gstack",
+      "title": "gstack supports Hermes natively — /pair-agent names Hermes explicitly",
+      "pattern": "23-specialist virtual team. Cross-model review via /codex. /browse and /qa using Playwright CLI instead of Chrome MCP. 121K GitHub stars.",
+      "applies_to": "Forge evaluate gstack install on Hermes. Focus on /browse, /qa, /autoplan tools.",
+      "priority": "Queue for review"
+    },
+    {
+      "id": "FI-002",
       "source": "Internal / Steve Wandler",
       "title": "Skill self-modification policy: agents may self-patch, drift caught by review",
-      "pattern": "Steve reversed morning prohibition within hours — self-learning stays on as platform designed. Policy settled: agents may self-patch own skills; drift gets caught in review and corrected by training, not blocked.",
+      "pattern": "Steve reversed morning prohibition within hours — self-learning stays on. Policy settled: agents may self-patch own skills; drift caught in review.",
       "applies_to": "Agent fleet governance",
       "priority": "File for reference"
     }
@@ -228,7 +309,7 @@
       "stalled_deals": "Utah SEA $1.3M (FY27, parked), Garland $140K (Quote Sent, Jul 31 close)",
       "imta_districts": "Mesquite, Garland — IMTA funding covers 97% of renewal districts"
     },
-    "note": "⚠️ Zig's HubSpot MCP missing — last live pull July 6. 51/68 renewals in 'To Be Renewed.' 26/27 renewal: $387K banked, $508K pipeline, $105K gap. $1.46/student avg vs $3.00 target.",
+    "note": "⚠️ Zig's HubSpot MCP missing — last live pull July 6. 51/68 renewals in 'To Be Renewed.' Pipeline data is 12 days stale.",
     "links": [
       {
         "label": "Sales Dashboard (Zig)",
@@ -243,18 +324,15 @@
   "cs": {
     "summary": {
       "onboarding_blocker": "Granger ISD — SIS roster upload timeout (1,440 of 4,418 enrollments failed)",
-      "active_escalations": "FERPA P0 — cross-district data exposure still LIVE across 9 districts (V2KAN-280/179/281)",
-      "recent_onboarding": "Rankin ISD — campus access bug (took 2 tries), book re-upload creates duplicates",
-      "product_feedback_week": "12 new entries (FB-075→FB-086), 0 true closed loops, 7 unactioned"
+      "active_escalations": "FERPA P0 — cross-district data exposure still LIVE across 9 districts",
+      "recent_onboarding": "Rankin ISD — campus access bug, book re-upload creates duplicates"
     }
   },
   "product": {
     "summary": {
-      "p0_live": "Cross-district FERPA data exposure — 9 districts, 3 Jira tickets in progress",
-      "blocker_bugs": "SIS roster processing timeout (5 districts), CSV parsing (Granger go-live blocked)",
-      "hot_zone": "Onboarding & setup — 5 of 12 new feedback entries this week",
-      "strategic": "HB 1605 compliance cluster (FB-076-FB-079) — 4 FRs, 1,200 Texas districts by 2030-31",
-      "book_flag_credibility": "Week 4 running — National/District labels communicate false provenance. ESC Consortia webinar risk."
+      "p0_live": "Cross-district FERPA data exposure — 9 districts",
+      "blocker_bugs": "SIS roster processing timeout (5 districts), Granger go-live blocked",
+      "hot_zone": "Onboarding & setup — 5 of 12 new feedback entries this week"
     }
   },
   "strategy_decisions": [
@@ -263,13 +341,14 @@
     { "id": "D-003", "title": "Book Intelligence Canonical Strategy (v2026-07-13)", "status": "active" },
     { "id": "D-004", "title": "Design & Brand Operating Model v2 (2026-07-17)", "status": "deployed" },
     { "id": "D-005", "title": "Outcome-Based Tickets Standard (2026-07-17)", "status": "deployed" },
-    { "id": "D-006", "title": "Agent Skill Self-Modification Policy (agents may self-patch)", "status": "settled" }
+    { "id": "D-006", "title": "Agent Skill Self-Modification Policy", "status": "settled" }
   ],
   "strategy_open": [
     { "id": "O-001", "title": "Garland ISD close by Jul 31 — $140K deal in Quote Sent", "status": "open" },
     { "id": "O-002", "title": "ESC 10 partnership — follow-up call Jul 29", "status": "open" },
     { "id": "O-003", "title": "G-Brain source-scoping — agent read access to employees source", "status": "blocked" },
-    { "id": "O-004", "title": "Cockpit palette — DM Sans vs Urbanist (brand alignment)", "status": "open" }
+    { "id": "O-004", "title": "Cockpit palette — align to brand v4.0.0 or declare exception", "status": "open" },
+    { "id": "O-005", "title": "Revenue target — Zig at $1.5M vs Steve at $1M", "status": "open" }
   ],
   "tokens_total": {
     "month": "TBD",
