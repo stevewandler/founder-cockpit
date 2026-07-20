@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T21:45:00-05:00",
+    "last_updated": "2026-07-19T21:30:00-06:00",
     "scan_type": "Nightly Deep Scan",
-    "northy_message": "Quiet Saturday. One piece of Garry Tan intel for Monday morning: his keynote on institutional memory as the AI moat. Also — cockpit still uses three colors you retired yesterday. That's the one thing that needs your call."
+    "northy_message": "Quiet Saturday night. Counters incremented. Garry Tan's GBrain hit 26K stars with company-brain mode — the infrastructure layer is becoming real. Anthropic published their multi-agent architecture — 90% improvement over single-agent. Monday: three revenue actions before anything else."
   },
   "act_now": [
     {
@@ -15,9 +15,9 @@
     },
     {
       "id": "N-034",
-      "title": "Zig is flying blind — HubSpot pipeline data stale since July 6",
+      "title": "Zig is flying blind — HubSpot pipeline data stale since July 6 (14 days)",
       "category": "drift",
-      "detail": "Zig's hubspot skill missing from runtime. Last live pull July 6. 51 of 68 renewal districts (72%) still in 'To Be Renewed.' 43 days to Sept 1.",
+      "detail": "Zig's hubspot skill missing from runtime. Last live pull July 6. 51 of 68 renewal districts (72%) still in 'To Be Renewed.' 42 days to Sept 1.",
       "action": "Direct Raju/Woz: restore Zig's HubSpot MCP access Monday. Live pipeline data before any other fleet work.",
       "status": "needs-steve"
     },
@@ -31,9 +31,9 @@
     },
     {
       "id": "N-084",
-      "title": "Systems-Mode Trap: DAY 12 — zero revenue activity",
+      "title": "Systems-Mode Trap: DAY 14 — zero revenue activity",
       "category": "drift",
-      "detail": "Day 12 since last revenue conversation. Cash $97.7K. 43 days to Sept 1. Saturday quiet is expected — Monday is the test.",
+      "detail": "Day 14 since last revenue conversation. Cash $97.7K. 42 days to Sept 1. Saturday quiet is expected — Monday is the test.",
       "action": "Monday: three revenue actions before anything else. Text Jodi. Call one superintendent.",
       "status": "needs-steve"
     },
@@ -47,9 +47,9 @@
     },
     {
       "id": "N-059",
-      "title": "Revenue target contradiction: Zig at $1.5M vs Steve at $1M — 21 days",
+      "title": "Revenue target contradiction: Zig at $1.5M vs Steve at $1M — 23 days",
       "category": "contradiction",
-      "detail": "Zig's last report uses '$1.5M by Aug 1.' Real target is $1M by Sept 1. 21 days uncorrected.",
+      "detail": "Zig's last report uses '$1.5M by Aug 1.' Real target is $1M by Sept 1. 23 days uncorrected.",
       "action": "Tell Zig: 'Target is $1M by Sept 1. Recompute.' Ten seconds.",
       "status": "needs-steve"
     },
@@ -57,13 +57,13 @@
       "id": "N-032",
       "title": "Patrick equity cliff OVERDUE +5 — 30 days of lag",
       "category": "commitment",
-      "detail": "July 15 passed. Now July 18. No equity conversation. 30 days of lag time.",
+      "detail": "July 15 passed. Now July 20. No equity conversation. 30 days of lag time.",
       "action": "Call him Monday. Use STATE. Be 100% honest AND 100% respectful.",
       "status": "needs-steve"
     },
     {
       "id": "N-080",
-      "title": "Natasha renewals unassigned — 63 days, ~$42K ILTexas + 5 others",
+      "title": "Natasha renewals unassigned — 65 days, ~$42K ILTexas + 5 others",
       "category": "risk",
       "detail": "ILTexas $42K + 5 other renewals. Over two months unassigned. Revenue sitting on a shelf.",
       "action": "Assign to Teela or Jan Monday.",
@@ -72,20 +72,32 @@
   ],
   "think_about": [
     {
+      "id": "N-095",
+      "title": "Garry Tan: GBrain at 26K stars, company-brain mode ships — institutional memory as infrastructure",
+      "category": "intel",
+      "urgency": "high"
+    },
+    {
+      "id": "N-096",
+      "title": "Anthropic multi-agent: orchestrator-worker pattern, 90% improvement over single-agent",
+      "category": "intel",
+      "urgency": "medium"
+    },
+    {
       "id": "N-093",
       "title": "Garry Tan: 'Institutional memory, not model access, is the AI-native moat'",
       "category": "intel",
       "urgency": "high"
     },
     {
-      "id": "N-090",
-      "title": "Garry Tan: gstack supports Hermes + gbrain natively",
-      "category": "intel",
+      "id": "N-097",
+      "title": "ESC 10: agents don't have latest intel — Angela direct contracting is strategic unlock",
+      "category": "connection",
       "urgency": "medium"
     },
     {
       "id": "N-094",
-      "title": "G-Brain autopilot cycles cancelling — 191 lock.lost errors, zero completing",
+      "title": "G-Brain autopilot cycles cancelling — dream cycle July 19: 0 completed, 4 failed",
       "category": "infrastructure",
       "urgency": "low"
     },
@@ -105,32 +117,32 @@
   "health": {
     "frame": {
       "status": "yellow",
-      "note": "Brand unification is strong. But DAY 12 of systems-mode. 43 days to Sept 1."
+      "note": "Brand unification deployed. DAY 14 of systems-mode. 42 days to Sept 1."
     },
     "floor": {
       "status": "yellow",
-      "note": "Two revenue channels archived. Cockpit uses retired colors. No floor violations on deals."
+      "note": "Two revenue channels archived. Cockpit uses retired colors. No deal-level floor violations."
     },
     "focus": {
       "status": "red",
-      "note": "Systems-mode DAY 12. Monday must be revenue-first. The pipeline doesn't close itself."
+      "note": "Systems-mode DAY 14. Monday must be revenue-first. The pipeline doesn't close itself."
     },
     "why": {
       "status": "green",
-      "note": "Atoms show mission clarity. Follett positioning is sharp. The WHY is embedded."
+      "note": "Atoms keep surfacing mission clarity. ESC-10 plan is sharp. WHY is embedded."
     }
   },
   "cliff": [
     {
       "metric": "Days to September 1",
-      "value": "43",
+      "value": "42",
       "target": "0",
-      "gap": "43 days remain",
+      "gap": "42 days remain",
       "status": "urgent"
     },
     {
       "metric": "Pipeline data freshness",
-      "value": "Jul 6 (12 days stale)",
+      "value": "Jul 6 (14 days stale)",
       "target": "Daily",
       "gap": "Zig's HubSpot MCP is missing — blind on pipeline",
       "status": "urgent"
@@ -181,6 +193,12 @@
         "to": "ESC 10 / Lori Aden",
         "date": "2026-07-29",
         "status": "open"
+      },
+      {
+        "what": "Forward latest ESC-10 intel to Annie/Zig/Seth before July 29 call",
+        "to": "Annie/Zig/Seth",
+        "date": "2026-07-21",
+        "status": "open"
       }
     ],
     "team_owes": [
@@ -221,10 +239,26 @@
   "resolved": [],
   "intel": [
     {
+      "id": "FI-005",
+      "source": "Garry Tan / GBrain GitHub",
+      "title": "GBrain at 26K stars, company-brain mode documented — multi-user, OAuth-scoped institutional memory",
+      "pattern": "Company brain mode now documented: federated, multi-user, OAuth-scoped access. 90-min tutorial from zero to team brain. Fuzz-tested against leaks across every read path. YC RFS for company-brain builders — Garry open-sourced his answer.",
+      "applies_to": "If Bookmarked ever needs shared institutional memory across team: the path is paved. GBrain company-brain mode is production-grade. The industry direction is clear: shared, permissioned memory, not per-employee chatbots.",
+      "priority": "Queue for review"
+    },
+    {
+      "id": "FI-006",
+      "source": "Anthropic Engineering / Claude Platform",
+      "title": "Multi-agent orchestrator-worker: 90% improvement over single-agent, parallel subagents, production patterns",
+      "pattern": "Lead agent decomposes queries, spawns parallel subagents with scoped tools. Parallel tool calling cut research time 90%. Prompt principles: teach delegation, scale effort to complexity, guide thinking. Fable 5 + Sonnet 5 advisor pattern: 92% of Fable score at 63% of price.",
+      "applies_to": "Direct validation of Steve's agent fleet (Nero/Northy/Forge). Anthropic's prompt engineering principles and scaling rules are transferable to Forge's orchestration patterns.",
+      "priority": "Queue for review"
+    },
+    {
       "id": "FI-004",
       "source": "Garry Tan / YC Keynote",
       "title": "Institutional Memory, Not Model Access, Is the AI-Native Moat",
-      "pattern": "The durable asset isn't model access (rented). It's accumulated skills, memory, processes, and ability to select relevant context. 'Skill file = employee. Resolver table = org chart.' Never do one-off work — skillify it. GBrain at 220K+ pages, 66 cron jobs.",
+      "pattern": "The durable asset isn't model access (rented). It's accumulated skills, memory, processes, and ability to select relevant context. 'Skill file = employee. Resolver table = org chart.' Never do one-off work — skillify it.",
       "applies_to": "Direct validation of Steve's agent fleet approach. The founding trio (Steve+Northy+Forge) maps perfectly to Garry's 'workforce made of markdown.' Every Bookmarked agent skill is a moat-building asset.",
       "priority": "Queue for review"
     },
@@ -232,17 +266,9 @@
       "id": "FI-003",
       "source": "Garry Tan / gstack",
       "title": "gstack supports Hermes natively — /pair-agent names Hermes explicitly",
-      "pattern": "23-specialist virtual team. Cross-model review via /codex. /browse and /qa using Playwright CLI instead of Chrome MCP. 121K GitHub stars.",
+      "pattern": "23-specialist virtual team. Cross-model review via /codex. /browse and /qa using Playwright CLI.",
       "applies_to": "Forge evaluate gstack install on Hermes. Focus on /browse, /qa, /autoplan tools.",
       "priority": "Queue for review"
-    },
-    {
-      "id": "FI-002",
-      "source": "Internal / Steve Wandler",
-      "title": "Skill self-modification policy: agents may self-patch, drift caught by review",
-      "pattern": "Steve reversed morning prohibition within hours — self-learning stays on. Policy settled: agents may self-patch own skills; drift caught in review.",
-      "applies_to": "Agent fleet governance",
-      "priority": "File for reference"
     }
   ],
   "district_intel": {
@@ -304,12 +330,12 @@
   },
   "sales": {
     "summary": {
-      "active_pipeline": "$2.6M open (152 deals, last verified Jul 6)",
+      "active_pipeline": "$2.6M open (152 deals, last verified Jul 6 — 14 days stale)",
       "deals_closing_this_month": "10 deals, $275K (July), 7 deals $15K (Aug), 1 deal $1.2K (Sep)",
       "stalled_deals": "Utah SEA $1.3M (FY27, parked), Garland $140K (Quote Sent, Jul 31 close)",
-      "imta_districts": "Mesquite, Garland — IMTA funding covers 97% of renewal districts"
+      "imta_districts": "Mesquite, Garland, Cypress-Fairbanks ($20.9M IMTA — top target)"
     },
-    "note": "⚠️ Zig's HubSpot MCP missing — last live pull July 6. 51/68 renewals in 'To Be Renewed.' Pipeline data is 12 days stale.",
+    "note": "⚠️ Zig's HubSpot MCP missing — last live pull July 6. 51/68 renewals in 'To Be Renewed.' Pipeline data is 14 days stale.",
     "links": [
       {
         "label": "Sales Dashboard (Zig)",
