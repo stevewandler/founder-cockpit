@@ -2,7 +2,7 @@
   "tokens_total": {
     "month": "380",
     "last_month": "2,670",
-    "or_balance": "418",
+    "or_balance": "417",
     "combined_daily": "54",
     "or_daily": "54",
     "ant_daily": "0",
@@ -24,7 +24,7 @@
     {
       "model": "claude-haiku-4.5",
       "cost": 45.54,
-      "label": "Off-Policy"
+      "label": "Personal"
     },
     {
       "model": "deepseek-v4-flash",
