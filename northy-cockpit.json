@@ -1,76 +1,86 @@
 {
   "meta": {
-    "last_updated": "2026-07-19T21:30:00-06:00",
+    "last_updated": "2026-07-20T22:00:00-06:00",
     "scan_type": "Nightly Deep Scan",
-    "northy_message": "Quiet Saturday night. Counters incremented. Garry Tan's GBrain hit 26K stars with company-brain mode — the infrastructure layer is becoming real. Anthropic published their multi-agent architecture — 90% improvement over single-agent. Monday: three revenue actions before anything else."
+    "northy_message": "Sunday. Zero Steve activity. Counters incremented. Extract-atoms surfaced DataArt nearshore pivot + Raju on AI killing async handoffs. Monday: DAY 15 of systems-mode. Three revenue actions before anything else."
   },
   "act_now": [
     {
-      "id": "N-041",
-      "title": "Cockpit uses three retired colors — #12A38C, #107569, #101828",
-      "category": "contradiction",
-      "detail": "Your July 17 Fleet Directive retires #12A38C, #107569, #0D5A52. Cockpit still uses them. Brand canon moved to #15B79E / #0E766A / #111928. System font stack replaces DM Sans.",
-      "action": "Decide: (a) align cockpit to brand canon v4.0.0, or (b) declare cockpit intentionally distinct. If (a), Forge does a CSS search-and-replace.",
+      "id": "N-084",
+      "title": "Systems-Mode Trap: DAY 15 — zero revenue activity, 41 days to Sept 1",
+      "category": "drift",
+      "detail": "Day 15 since last revenue conversation. Two full weeks. Cash $97.7K. 41 days to Sept 1. This is the ULP pattern — building feels like progress, but it doesn't close Garland.",
+      "action": "Monday morning: three revenue actions before anything else. Text Jodi. Call one superintendent.",
       "status": "needs-steve"
     },
     {
       "id": "N-034",
-      "title": "Zig is flying blind — HubSpot pipeline data stale since July 6 (14 days)",
+      "title": "Zig is flying blind — HubSpot pipeline data stale since July 6 (15 days)",
       "category": "drift",
-      "detail": "Zig's hubspot skill missing from runtime. Last live pull July 6. 51 of 68 renewal districts (72%) still in 'To Be Renewed.' 42 days to Sept 1.",
+      "detail": "Zig's hubspot skill missing from runtime. Last live pull July 6. 51 of 68 renewal districts (72%) still in 'To Be Renewed.' 41 days to Sept 1.",
       "action": "Direct Raju/Woz: restore Zig's HubSpot MCP access Monday. Live pipeline data before any other fleet work.",
-      "status": "needs-steve"
-    },
-    {
-      "id": "N-035",
-      "title": "SIS roster bug blocking 5 districts — Granger can't go live",
-      "category": "opportunity",
-      "detail": "Large SFTP uploads timeout mid-processing. Granger: 1,440 of 4,418 enrollments failed. Forney: 0 students across 30 campuses.",
-      "action": "Confirm with Sarah it's a blocker, route to Scout with owner + deadline.",
-      "status": "needs-steve"
-    },
-    {
-      "id": "N-084",
-      "title": "Systems-Mode Trap: DAY 14 — zero revenue activity",
-      "category": "drift",
-      "detail": "Day 14 since last revenue conversation. Cash $97.7K. 42 days to Sept 1. Saturday quiet is expected — Monday is the test.",
-      "action": "Monday: three revenue actions before anything else. Text Jodi. Call one superintendent.",
-      "status": "needs-steve"
-    },
-    {
-      "id": "N-092",
-      "title": "Both revenue Slack channels archived — no revenue coordination surface",
-      "category": "risk",
-      "detail": "#sales_revenue-ninjas and #renewal-gtm-alignment both archived June 29. Revenue coordination has no Slack home.",
-      "action": "Reactivate one revenue channel or state in #ai-ceo-team that revenue coordination lives there.",
-      "status": "needs-steve"
-    },
-    {
-      "id": "N-059",
-      "title": "Revenue target contradiction: Zig at $1.5M vs Steve at $1M — 23 days",
-      "category": "contradiction",
-      "detail": "Zig's last report uses '$1.5M by Aug 1.' Real target is $1M by Sept 1. 23 days uncorrected.",
-      "action": "Tell Zig: 'Target is $1M by Sept 1. Recompute.' Ten seconds.",
       "status": "needs-steve"
     },
     {
       "id": "N-032",
       "title": "Patrick equity cliff OVERDUE +5 — 30 days of lag",
       "category": "commitment",
-      "detail": "July 15 passed. Now July 20. No equity conversation. 30 days of lag time.",
-      "action": "Call him Monday. Use STATE. Be 100% honest AND 100% respectful.",
+      "detail": "July 15 passed. Now July 20. Five days overdue. No equity conversation. 30 days total lag time. This gets harder every day.",
+      "action": "Call him Monday. Use STATE. 100% honest AND 100% respectful. The avoidance compounds.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-059",
+      "title": "Revenue target contradiction: Zig at $1.5M vs Steve at $1M — 24 days",
+      "category": "contradiction",
+      "detail": "Zig's target: $1.5M by Aug 1. Real target: $1M by Sept 1. 24 days uncorrected. Every day this goes uncorrected, Zig optimizes for the wrong number.",
+      "action": "Tell Zig: 'Target is $1M by Sept 1. Recompute.' Ten seconds.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-092",
+      "title": "Both revenue Slack channels archived — no revenue coordination surface",
+      "category": "risk",
+      "detail": "#sales_revenue-ninjas and #renewal-gtm-alignment both archived June 29. Revenue coordination has no Slack home. Archived channels = archived priorities.",
+      "action": "Reactivate one revenue channel or state in #ai-ceo-team that revenue coordination lives there.",
       "status": "needs-steve"
     },
     {
       "id": "N-080",
-      "title": "Natasha renewals unassigned — 65 days, ~$42K ILTexas + 5 others",
+      "title": "Natasha renewals unassigned — 66 days, ~$42K ILTexas + 5 others",
       "category": "risk",
       "detail": "ILTexas $42K + 5 other renewals. Over two months unassigned. Revenue sitting on a shelf.",
-      "action": "Assign to Teela or Jan Monday.",
+      "action": "Assign to Teela or Jan Monday. This doesn't need a meeting — it needs an owner.",
+      "status": "needs-steve"
+    },
+    {
+      "id": "N-041",
+      "title": "Cockpit uses three retired colors — #12A38C, #107569, #101828",
+      "category": "contradiction",
+      "detail": "Design v4.0.0 retired #12A38C, #107569, #0D5A52. Cockpit still uses them. Brand canon: #15B79E / #0E766A / #111928. System font stack.",
+      "action": "Decide: (a) align cockpit to brand canon v4.0.0, or (b) declare cockpit intentionally distinct.",
       "status": "needs-steve"
     }
   ],
   "think_about": [
+    {
+      "id": "N-098",
+      "title": "Garry Tan: Senses & Reflexes architecture — recipe format for fleet composition (NEW)",
+      "category": "intel",
+      "urgency": "high"
+    },
+    {
+      "id": "N-099",
+      "title": "Karpathy neuroscience framework maps to founding trio — hippocampus/basal ganglia/thalamus (NEW)",
+      "category": "intel",
+      "urgency": "medium"
+    },
+    {
+      "id": "N-100",
+      "title": "Pieter Levels: 'AI factories with no money or traffic' — external echo of N-084 (NEW)",
+      "category": "intel",
+      "urgency": "medium"
+    },
     {
       "id": "N-095",
       "title": "Garry Tan: GBrain at 26K stars, company-brain mode ships — institutional memory as infrastructure",
@@ -102,47 +112,41 @@
       "urgency": "low"
     },
     {
-      "id": "N-038",
-      "title": "51 renewal districts still 'To Be Renewed' — $363K at risk",
-      "category": "connection",
+      "id": "N-035",
+      "title": "SIS roster bug blocking 5 districts — Granger can't go live",
+      "category": "opportunity",
       "urgency": "high"
-    },
-    {
-      "id": "N-040",
-      "title": "FERPA P0 still live across 9 districts — 3 weeks since detection",
-      "category": "contradiction",
-      "urgency": "medium"
     }
   ],
   "health": {
     "frame": {
       "status": "yellow",
-      "note": "Brand unification deployed. DAY 14 of systems-mode. 42 days to Sept 1."
+      "note": "Brand unified. DAY 15 systems-mode. 41 days to Sept 1."
     },
     "floor": {
       "status": "yellow",
-      "note": "Two revenue channels archived. Cockpit uses retired colors. No deal-level floor violations."
+      "note": "Revenue channels archived. Cockpit palette drift. No deal-level violations."
     },
     "focus": {
       "status": "red",
-      "note": "Systems-mode DAY 14. Monday must be revenue-first. The pipeline doesn't close itself."
+      "note": "Systems-mode DAY 15. Monday must be revenue-first. Two weeks of building. Zero pipeline action."
     },
     "why": {
       "status": "green",
-      "note": "Atoms keep surfacing mission clarity. ESC-10 plan is sharp. WHY is embedded."
+      "note": "Atoms surfacing mission clarity. ESC-10 plan sharp. WHY embedded."
     }
   },
   "cliff": [
     {
       "metric": "Days to September 1",
-      "value": "42",
+      "value": "41",
       "target": "0",
-      "gap": "42 days remain",
+      "gap": "41 days remain",
       "status": "urgent"
     },
     {
       "metric": "Pipeline data freshness",
-      "value": "Jul 6 (14 days stale)",
+      "value": "Jul 6 (15 days stale)",
       "target": "Daily",
       "gap": "Zig's HubSpot MCP is missing — blind on pipeline",
       "status": "urgent"
@@ -185,7 +189,7 @@
       {
         "what": "Three revenue actions (text Jodi, call superintendent)",
         "to": "Self",
-        "date": "2026-07-20",
+        "date": "2026-07-21",
         "status": "urgent"
       },
       {
@@ -239,35 +243,67 @@
   "resolved": [],
   "intel": [
     {
+      "id": "FI-007",
+      "source": "Garry Tan / GBrain v0.7.0",
+      "title": "Senses & Reflexes architecture: recipe format with dependency graphs, integration marketplace",
+      "pattern": "Each agent skill defined as a recipe with explicit dependency graphs. YC Startup School: 6K founders, 12%→4% OK ratings via skill-based matching + /improve loop. The fleet's next evolution is declarative composition.",
+      "applies_to": "Existing agent fleet (Nero/Northy/Forge) can be defined as declarative recipes. Forge evaluate: recipe format for agent composition + dependency graphs.",
+      "priority": "Queue for review"
+    },
+    {
+      "id": "FI-008",
+      "source": "Andrej Karpathy / July 2026 talk",
+      "title": "Neuroscience-inspired agent architecture: hippocampus (memory), basal ganglia (action), thalamus (conflict resolution)",
+      "pattern": "'Agents aren't the product — foundational capabilities are.' Three brain regions map to G-Brain (memory), Northy (action selection), Forge (execution gating). External validation of the founding trio architecture.",
+      "applies_to": "The founding trio maps cleanly to Karpathy's neuroscience framework. File as architectural validation — the world is converging on what Steve built 6 weeks ago.",
+      "priority": "File for reference"
+    },
+    {
+      "id": "FI-009",
+      "source": "Wade Foster / LinkedIn",
+      "title": "Slack Coach pattern: agent flags hedging, unclear asks, buried points in exec channels",
+      "pattern": "Agent sits in exec Slack channels, flags communication anti-patterns. Lightweight, proven at Zapier scale. Implementable as a single Hermes skill reading Slack MCP.",
+      "applies_to": "Could run as a lightweight skill in #ai-ceo-team or #ceo channel. Surfaces communication drift early.",
+      "priority": "File for reference"
+    },
+    {
+      "id": "FI-010",
+      "source": "Greg Isenberg / LinkedIn",
+      "title": "Company-as-context-layer: 'The moat is how legible your company is'",
+      "pattern": "AI-era moat isn't model access — it's institutional legibility. The more structured your company's knowledge, the more leverage AI gives you. Direct validation of G-Brain + agent fleet.",
+      "applies_to": "Strategic validation, not technical upgrade. G-Brain being populated with every decision, conversation, and pattern IS the moat.",
+      "priority": "File for reference"
+    },
+    {
+      "id": "FI-011",
+      "source": "Pieter Levels / levels.io",
+      "title": "AI factories with no money or traffic — distribution warning",
+      "pattern": "Builders spending months on agent architecture without shipping revenue. External echo of N-084 systems-mode trap. Revenue comes from selling, not architecting.",
+      "applies_to": "Direct echo of N-084. Not new insight — confirmation. Monday: revenue first.",
+      "priority": "Queue for review"
+    },
+    {
       "id": "FI-005",
       "source": "Garry Tan / GBrain GitHub",
       "title": "GBrain at 26K stars, company-brain mode documented — multi-user, OAuth-scoped institutional memory",
-      "pattern": "Company brain mode now documented: federated, multi-user, OAuth-scoped access. 90-min tutorial from zero to team brain. Fuzz-tested against leaks across every read path. YC RFS for company-brain builders — Garry open-sourced his answer.",
-      "applies_to": "If Bookmarked ever needs shared institutional memory across team: the path is paved. GBrain company-brain mode is production-grade. The industry direction is clear: shared, permissioned memory, not per-employee chatbots.",
+      "pattern": "Company brain mode now documented. 90-min tutorial. YC RFS for company-brain builders. Production-grade shared institutional memory.",
+      "applies_to": "If Bookmarked ever needs shared institutional memory: the path is paved.",
       "priority": "Queue for review"
     },
     {
       "id": "FI-006",
-      "source": "Anthropic Engineering / Claude Platform",
+      "source": "Anthropic Engineering",
       "title": "Multi-agent orchestrator-worker: 90% improvement over single-agent, parallel subagents, production patterns",
-      "pattern": "Lead agent decomposes queries, spawns parallel subagents with scoped tools. Parallel tool calling cut research time 90%. Prompt principles: teach delegation, scale effort to complexity, guide thinking. Fable 5 + Sonnet 5 advisor pattern: 92% of Fable score at 63% of price.",
-      "applies_to": "Direct validation of Steve's agent fleet (Nero/Northy/Forge). Anthropic's prompt engineering principles and scaling rules are transferable to Forge's orchestration patterns.",
+      "pattern": "Lead agent decomposes queries, spawns parallel subagents. Prompt principles: teach delegation, scale effort to complexity. Fable 5 + Sonnet 5: 92% at 63% price.",
+      "applies_to": "Direct validation of agent fleet. Prompt engineering principles are transferable to Forge's orchestration.",
       "priority": "Queue for review"
     },
     {
       "id": "FI-004",
       "source": "Garry Tan / YC Keynote",
       "title": "Institutional Memory, Not Model Access, Is the AI-Native Moat",
-      "pattern": "The durable asset isn't model access (rented). It's accumulated skills, memory, processes, and ability to select relevant context. 'Skill file = employee. Resolver table = org chart.' Never do one-off work — skillify it.",
-      "applies_to": "Direct validation of Steve's agent fleet approach. The founding trio (Steve+Northy+Forge) maps perfectly to Garry's 'workforce made of markdown.' Every Bookmarked agent skill is a moat-building asset.",
-      "priority": "Queue for review"
-    },
-    {
-      "id": "FI-003",
-      "source": "Garry Tan / gstack",
-      "title": "gstack supports Hermes natively — /pair-agent names Hermes explicitly",
-      "pattern": "23-specialist virtual team. Cross-model review via /codex. /browse and /qa using Playwright CLI.",
-      "applies_to": "Forge evaluate gstack install on Hermes. Focus on /browse, /qa, /autoplan tools.",
+      "pattern": "Durable asset isn't model access. It's accumulated skills, memory, processes. 'Skill file = employee. Resolver table = org chart.' Never one-off work — skillify it.",
+      "applies_to": "Direct validation of agent fleet approach. Every Bookmarked agent skill is a moat-building asset.",
       "priority": "Queue for review"
     }
   ],
@@ -330,12 +366,12 @@
   },
   "sales": {
     "summary": {
-      "active_pipeline": "$2.6M open (152 deals, last verified Jul 6 — 14 days stale)",
+      "active_pipeline": "$2.6M open (152 deals, last verified Jul 6 — 15 days stale)",
       "deals_closing_this_month": "10 deals, $275K (July), 7 deals $15K (Aug), 1 deal $1.2K (Sep)",
       "stalled_deals": "Utah SEA $1.3M (FY27, parked), Garland $140K (Quote Sent, Jul 31 close)",
       "imta_districts": "Mesquite, Garland, Cypress-Fairbanks ($20.9M IMTA — top target)"
     },
-    "note": "⚠️ Zig's HubSpot MCP missing — last live pull July 6. 51/68 renewals in 'To Be Renewed.' Pipeline data is 14 days stale.",
+    "note": "⚠️ Zig's HubSpot MCP missing — last live pull July 6. 51/68 renewals in 'To Be Renewed.' Pipeline data 15 days stale. 41 days to Sept 1.",
     "links": [
       {
         "label": "Sales Dashboard (Zig)",
