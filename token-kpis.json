@@ -2,13 +2,13 @@
   "tokens_total": {
     "month": "391",
     "last_month": "2,670",
-    "or_balance": "355",
+    "or_balance": "350",
     "combined_daily": "56",
     "or_daily": "56",
     "ant_daily": "0",
-    "today_or": "49.69",
+    "today_or": "0.00",
     "today_ant": "0.00",
-    "today_combined": "49.69"
+    "today_combined": "0.00"
   },
   "tokens_models": [
     {
@@ -24,7 +24,7 @@
     {
       "model": "claude-haiku-4.5",
       "cost": 47.63,
-      "label": "Off-Policy"
+      "label": "Personal"
     },
     {
       "model": "deepseek-v4-flash",
@@ -38,21 +38,8 @@
     }
   ],
   "tokens_today_by_model": {
-    "openrouter": {
-      "deepseek/deepseek-v4-flash": 1.0956790000000003,
-      "deepseek/deepseek-v4-pro": 33.802108,
-      "anthropic/claude-sonnet-4": 0.306346,
-      "google/gemini-3-flash-preview": 2.140964,
-      "minimax/minimax-m2.7": 0.031257,
-      "openai/text-embedding-3-small": 0.001924,
-      "anthropic/claude-haiku-4.5": 5.138586,
-      "z-ai/glm-5.2": 5.023741,
-      "google/gemini-2.5-flash": 2.0955719999999998,
-      "x-ai/grok-4.5": 0.052016
-    },
-    "anthropic": {
-      "claude-haiku-4-5-20251001": 0.002917
-    }
+    "openrouter": {},
+    "anthropic": {}
   },
   "tokens_dashboard_url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/"
 }
