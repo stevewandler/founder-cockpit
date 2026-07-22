@@ -24,7 +24,7 @@
     {
       "model": "claude-haiku-4.5",
       "cost": 48.0,
-      "label": "Personal"
+      "label": "Off-Policy"
     },
     {
       "model": "deepseek-v4-flash",
