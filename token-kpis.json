@@ -19,7 +19,7 @@
     {
       "model": "claude-haiku-4.5",
       "cost": 30.03,
-      "label": "Off-Policy"
+      "label": "Personal"
     },
     {
       "model": "glm-5.2",
@@ -34,7 +34,7 @@
     {
       "model": "claude-sonnet-4.6",
       "cost": 4.09,
-      "label": "Off-Policy"
+      "label": "Personal"
     }
   ],
   "tokens_today_by_model": {
