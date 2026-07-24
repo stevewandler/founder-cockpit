@@ -1,158 +1,250 @@
 {
   "meta": {
-    "last_updated": "2026-07-21T23:00:00-05:00",
-    "scan_type": "Nightly Deep Scan (Tuesday)",
-    "northy_message": "Monday came and went. No visible revenue activity. DAY 16. 40 days to Sept 1. Cash $97.7K. Tuesday: three revenue actions before noon. The math doesn't negotiate."
+    "last_updated": "2026-07-23T23:00:00-05:00",
+    "scan_type": "Nightly Deep Scan",
+    "northy_message": "Wednesday cracked the systems-mode trap — but didn't break it. Canyon renewal call + Follett reconnection = real revenue activity, the first in 17 days. But $3K retention isn't new revenue. 39 days. Build on this Thursday, don't retreat."
   },
   "act_now": [
     {
       "id": "N-084",
-      "title": "Systems-Mode Trap: DAY 16 — Monday produced no visible revenue, 40 days to Sept 1",
-      "category": "drift",
-      "detail": "DAY 16. Monday's test not passed — no visible revenue activity in any data source. Transcripts still processing so can't be definitive, but nothing surfaced. Cash $97.7K. ~4 weeks runway.",
-      "action": "Tuesday: three revenue actions before noon. Text Jodi. Call one superintendent. Review one pipeline deal. Revenue first — not product catch-up, not agent fixes.",
-      "status": "needs-steve"
+      "title": "Systems-Mode Trap DAY 17 — Crack But Not Broken",
+      "category": "Strategic Drift",
+      "detail": "Wednesday: Canyon ISD renewal call (48 min, $3K) + Follett reconnection email. First observable revenue activity in 17 days. But $3K retention deal. Not new revenue. 39 days to Sept 1. Cash $97.7K.",
+      "action": "Thursday: three revenue actions before noon. Call Jodi. Call one superintendent. Call one renewal district. Build on momentum.",
+      "status": "escalated"
     },
     {
-      "id": "N-034",
-      "title": "Zig flying blind — HubSpot pipeline data stale since July 6 (16 days)",
-      "category": "drift",
-      "detail": "Last live HubSpot pull July 6. 16 days without pipeline visibility. 51 of 68 renewal districts (72%) still in 'To Be Renewed.' 40 days to Sept 1. Revenue decisions can't be made on vibes.",
-      "action": "Direct Raju: restore Zig's HubSpot MCP access before any other fleet work. Live pipeline data = single highest-leverage infra fix.",
+      "id": "N-102",
+      "title": "Canyon ISD Pipeline Zombie — $10,598 → $3,000",
+      "category": "Contradiction",
+      "detail": "Canyon renewal closed at $3K, down from $10,598 in HubSpot. 'Testing' flag was correct. 51 districts still in 'To Be Renewed' at full sticker — how many are zombies?",
+      "action": "Zig audit 51 'To Be Renewed' districts against budget deficit, IMTA position, personnel stability, last engagement. Re-price zombies.",
       "status": "needs-steve"
     },
     {
       "id": "N-032",
-      "title": "Patrick equity cliff OVERDUE +6 — 31 days of lag",
-      "category": "commitment",
-      "detail": "July 15 passed. Now July 21. Six days overdue. 31 days total lag time. The Crucial Conversations framework calls this out: short lag = healthy, long lag = rotting. The avoidance compounds every day.",
-      "action": "Call him Wednesday. Use STATE. 100% honest AND 100% respectful. The conversation is harder than the avoidance — but the avoidance is already 31 days hard.",
+      "title": "Patrick Equity Cliff OVERDUE +7 — 32 Days Lag",
+      "category": "Commitment",
+      "detail": "July 15 deadline passed. 32 days total. The Crucial Conversations framework: long lag = rotting. The conversation isn't getting easier.",
+      "action": "Call Patrick before Friday. Use STATE. 'I owe you a conversation about your equity. Can we talk this week?'",
+      "status": "escalated"
+    },
+    {
+      "id": "N-065",
+      "title": "Garland $247K — 10 Days No Movement Since Jodi Meeting",
+      "category": "Opportunity",
+      "detail": "Jodi meeting July 13. $247K combined (Garland $140K + CFB $107K) is single largest unpulled lever. 10 days no follow-up.",
+      "action": "Text Jodi Thursday: 'Following up on our July 13 conversation — when can we schedule the next step?'",
       "status": "needs-steve"
     },
     {
       "id": "N-059",
-      "title": "Revenue target contradiction: Zig at $1.5M vs Steve at $1M — 25 days uncorrected",
-      "category": "contradiction",
-      "detail": "Zig's target: $1.5M by Aug 1. Real target: $1M by Sept 1. 25 days uncorrected. Every day Zig optimizes for the wrong number. 10-second fix waiting 25 days.",
-      "action": "Slack Zig: 'Target is $1M by Sept 1. Recompute against that.' Ten seconds.",
-      "status": "needs-steve"
-    },
-    {
-      "id": "N-080",
-      "title": "Natasha renewals unassigned — 67 days, ~$42K ILTexas + 5 others",
-      "category": "risk",
-      "detail": "ILTexas $42K + 5 other renewals. Over two months unassigned. Revenue sitting on a shelf with 40 days to go.",
-      "action": "Assign to Teela or Jan. Doesn't need a meeting — needs an owner.",
-      "status": "needs-steve"
-    },
-    {
-      "id": "N-092",
-      "title": "Both revenue Slack channels archived — no revenue coordination surface",
-      "category": "risk",
-      "detail": "#sales_revenue-ninjas and #renewal-gtm-alignment both archived June 29. Revenue coordination has no Slack home. Archived channels = archived priorities. CONFIRMED pattern.",
-      "action": "Reactivate one revenue channel or state in #ai-ceo-team that revenue coordination lives there.",
-      "status": "needs-steve"
-    },
-    {
-      "id": "N-041",
-      "title": "Cockpit uses three retired colors — #12A38C, #107569, #101828",
-      "category": "contradiction",
-      "detail": "Design v4.0.0 retired #12A38C, #107569, #0D5A52. Cockpit still uses them. Brand canon: #15B79E / #0E766A / #111928. Cockpit is the only surface not updated.",
-      "action": "Decision: align cockpit to new palette or declare exception. One Slack message settles it.",
+      "title": "Revenue Target Contradiction DAY 26 — Zig at $1.5M",
+      "category": "Contradiction",
+      "detail": "Zig optimizing for $1.5M. Real target: $1M by Sept 1. 26 days uncorrected. Every day Zig works the wrong number.",
+      "action": "Tell Zig: 'Target is $1M by Sept 1. Recompute.' Ten seconds.",
       "status": "needs-steve"
     }
   ],
   "think_about": [
     {
-      "id": "N-101",
-      "title": "Garry Tan Knowledge Runtime: L1-L4 blueprint for fleet scaling (NEW)",
-      "category": "intel",
-      "urgency": "Queue for review"
+      "id": "N-103",
+      "title": "Grant-Hunting as Product Surface",
+      "category": "Opportunity",
+      "urgency": "This week"
     },
     {
-      "id": "N-094",
-      "title": "Autopilot cycle degradation — dream cycle July 22: 0/4 completed",
-      "category": "infrastructure",
-      "urgency": "Watch"
+      "id": "N-104",
+      "title": "IMTA Misuse = Statewide Sales Intelligence",
+      "category": "Connection",
+      "urgency": "This week"
     },
     {
-      "id": "N-097",
-      "title": "ESC-10 agent intel gap — forward July 6-8 intel before July 29 call",
-      "category": "connection",
+      "id": "N-105",
+      "title": "Canyon ISD Succession Cliff — 8-18 Month Clock",
+      "category": "Risk",
       "urgency": "Medium"
+    },
+    {
+      "id": "N-106",
+      "title": "Follett Pipeline Reactivation — Tara Reconnection Sent",
+      "category": "Opportunity",
+      "urgency": "Watch"
     }
   ],
   "health": {
-    "frame": { "status": "yellow", "note": "Brand unified. DAY 16 systems-mode. 40 days to Sept 1." },
-    "floor": { "status": "yellow", "note": "Revenue channels archived. Cockpit palette drift. No deal-level violations observed." },
-    "focus": { "status": "red", "note": "Systems-mode DAY 16. Monday produced no visible revenue activity. Tuesday must be revenue-first." },
-    "why": { "status": "green", "note": "ESC-10 plan sharp. Atoms surfacing mission clarity. WHY embedded in all comms." }
+    "frame": {
+      "status": "yellow",
+      "note": "Canyon deal aligned with WHY. Revenue activity detected. $3K doesn't move the needle. 39 days."
+    },
+    "floor": {
+      "status": "yellow",
+      "note": "$3K Canyon deal below normal floor but strategic — document as exception, not standard."
+    },
+    "focus": {
+      "status": "yellow",
+      "note": "IMPROVED from Red. Revenue activity cracks systems-mode trap. Not broken. Build on Thursday."
+    },
+    "why": {
+      "status": "green",
+      "note": "'We can't go without Bookmarked' — Lisa Hill. Mission alignment in every customer conversation."
+    }
   },
   "cliff": [
-    { "metric": "Cash on hand", "value": "$97.7K", "target": "$200K+", "gap": "~4 weeks runway", "status": "urgent" },
-    { "metric": "Days to Sept 1", "value": "40", "target": "0", "gap": "$1M target gap", "status": "urgent" },
-    { "metric": "Systems-mode streak", "value": "16 days", "target": "0", "gap": "No visible revenue activity", "status": "urgent" },
-    { "metric": "Pipeline visibility", "value": "16 days stale", "target": "Daily", "gap": "Zig flying blind", "status": "urgent" },
-    { "metric": "AWS spend", "value": "$18,627", "target": "$11K", "gap": "69% over budget", "status": "watch" }
+    {
+      "metric": "Days to Sept 1",
+      "value": 39,
+      "target": 0,
+      "gap": 39,
+      "status": "urgent"
+    },
+    {
+      "metric": "Cash on hand",
+      "value": "$97.7K",
+      "target": "$200K",
+      "gap": "$102.3K",
+      "status": "urgent"
+    },
+    {
+      "metric": "Gap to $1M",
+      "value": "$560K",
+      "target": "$0",
+      "gap": "$560K",
+      "status": "urgent"
+    },
+    {
+      "metric": "Patrick equity cliff overdue",
+      "value": "7 days",
+      "target": "0 days",
+      "gap": "7 days",
+      "status": "urgent"
+    },
+    {
+      "metric": "Zig pipeline data stale",
+      "value": "17 days",
+      "target": "1 day",
+      "gap": "16 days",
+      "status": "watch"
+    }
   ],
   "commitments": {
     "steve_owes": [
-      { "what": "Patrick equity conversation", "to": "Patrick Reid", "date": "2026-07-15 (OVERDUE +6)", "status": "urgent" },
-      { "what": "Correct Zig's revenue target ($1.5M → $1M)", "to": "Zig", "date": "ASAP (25 days)", "status": "urgent" },
-      { "what": "Restore HubSpot MCP access", "to": "Raju / Woz", "date": "ASAP (16 days stale)", "status": "urgent" },
-      { "what": "Assign Natasha renewals", "to": "Teela or Jan", "date": "ASAP (67 days)", "status": "urgent" },
-      { "what": "Forward ESC-10 intel to agents", "to": "Annie / Zig / Seth", "date": "Before July 29", "status": "open" }
+      {
+        "what": "Patrick equity conversation",
+        "to": "Patrick Reid",
+        "date": "2026-07-15",
+        "status": "urgent"
+      },
+      {
+        "what": "Canyon ISD MOU email + $3K invoice",
+        "to": "Lisa Hill",
+        "date": "2026-07-24",
+        "status": "open"
+      },
+      {
+        "what": "Garland Jodi follow-up",
+        "to": "Jodi (Garland ISD)",
+        "date": "2026-07-24",
+        "status": "open"
+      },
+      {
+        "what": "Zig revenue target correction to $1M",
+        "to": "Zig",
+        "date": "2026-07-24",
+        "status": "open"
+      },
+      {
+        "what": "Follett reconnection follow-up if no reply by Aug 6",
+        "to": "Tara Morrow",
+        "date": "2026-08-06",
+        "status": "watch"
+      }
     ],
     "team_owes": [
-      { "who": "Raju", "what": "HubSpot MCP access for Zig", "date": "ASAP", "status": "open" },
-      { "who": "Raju", "what": "Google OAuth for Hermes (morning automation)", "date": "Ongoing", "status": "open" },
-      { "who": "Forge", "what": "Diagnose autopilot cycle failures (0/4 July 22)", "date": "This week", "status": "watch" }
+      {
+        "who": "Zig",
+        "what": "Audit 51 'To Be Renewed' districts for zombies; update HubSpot",
+        "date": "2026-07-28",
+        "status": "open"
+      },
+      {
+        "who": "Sarah/Priya",
+        "what": "Route Lisa Hill product feedback when it arrives",
+        "date": "ongoing",
+        "status": "open"
+      }
     ]
   },
   "quick_access": [
-    { "label": "Founder Cockpit", "url": "https://founder-cockpit-personal.vercel.app/" },
-    { "label": "Sales Dashboard (Zig)", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/" },
-    { "label": "Financial Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-financial-dashboard/" },
-    { "label": "Jan's Methodology (Confluence)", "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017" },
-    { "label": "Token Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/" },
-    { "label": "District Intelligence", "url": "https://bookmarked-district-intelligence.vercel.app" }
+    {
+      "label": "Founder Cockpit",
+      "url": "https://founder-cockpit-personal.vercel.app/"
+    },
+    {
+      "label": "Sales Dashboard",
+      "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/"
+    },
+    {
+      "label": "Financial Dashboard",
+      "url": "https://bookmarked-corp.github.io/bookmarked-financial-dashboard/"
+    },
+    {
+      "label": "District Intelligence",
+      "url": "https://bookmarked-district-intelligence.vercel.app"
+    },
+    {
+      "label": "Jan's Methodology (Confluence)",
+      "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017"
+    }
   ],
-  "resolved": [],
   "intel": [
     {
-      "id": "FI-012",
-      "source": "Garry Tan / GBrain Knowledge Runtime",
-      "title": "L1-L4 Architecture: Resolver SDK → Enrichment → Scheduler → BrainWriter",
-      "pattern": "4-layer architecture replaces 69 bespoke scripts with 1 uniform interface. BrainWriter makes hallucinations structurally impossible (LLM output → JSON-Schema validator → Scaffolder). Maps cleanly to founding trio: Forge = L1+L4, Northy = L2, Hermes = L3.",
-      "applies_to": "Agent fleet architecture, write-path integrity",
+      "id": "FI-013",
+      "source": "Anthropic Engineering",
+      "title": "AI-Native SDLC Security — Single-Purpose Agent Identities",
+      "pattern": "Single-purpose agent identities, minimum permissions, agent-to-agent Slack comms as norm, every action logged to SIEM. Claude authors 80% of merged code.",
+      "applies_to": "Founding trio mutual watch protocol. Every agent should have a dedicated identity with minimum permissions for its job.",
       "priority": "Queue for review"
     },
     {
-      "id": "FI-011",
-      "source": "Pieter Levels / levels.io",
-      "title": "Distribution warning: 'AI factories with no money or traffic'",
-      "pattern": "External validation of N-084 — revenue comes from selling, not architecting.",
-      "applies_to": "Systems-mode trap awareness",
-      "priority": "Queue for review"
-    },
-    {
-      "id": "FI-008",
-      "source": "Andrej Karpathy / July 2026 talk",
-      "title": "Neuroscience-inspired agent architecture maps to founding trio",
-      "pattern": "Hippocampus (memory/G-Brain), basal ganglia (action/Northy), thalamus (gating/Forge). External validation of architecture direction.",
-      "applies_to": "Founding trio validation",
+      "id": "FI-014",
+      "source": "Garry Tan / @garrytan",
+      "title": "Context Engineering Is the Unlock — Not Bigger Windows",
+      "pattern": "The unlock isn't bigger context windows — it's context engineering: deciding WHICH three books to put on the desk. GBrain at 27K stars, 146K pages.",
+      "applies_to": "Hermes skill loading + G-Brain volunteer_context. Audit which pages are retrieved per task.",
       "priority": "Queue for review"
     }
   ],
   "district_intel": {
     "dashboards": [
-      { "label": "Board Minutes Intelligence", "description": "School board meeting analysis across TX districts", "repo_path": "bookmarked-district-intelligence/output/board-minutes-dashboard.html" },
-      { "label": "Superintendent Movement", "description": "Track superintendent changes and transitions", "repo_path": "bookmarked-district-intelligence/output/supt-movement-dashboard.html" },
-      { "label": "IMTA Funding Intelligence", "description": "IMTA allotment tracking and district funding data", "repo_path": "bookmarked-district-intelligence/output/imta-intelligence-dashboard.html" },
-      { "label": "Media Sentiment Intelligence", "description": "Media coverage and sentiment analysis", "repo_path": "bookmarked-district-intelligence/output/media-intelligence-dashboard.html" },
-      { "label": "District Profile Viewer", "description": "Individual district profiles and intelligence", "repo_path": "bookmarked-district-intelligence/output/district-profile.html" }
+      {
+        "label": "Board Minutes Intelligence",
+        "description": "School district board meeting analysis across Texas",
+        "repo_path": "BookmarkED-Corp/bookmarked-district-intelligence"
+      },
+      {
+        "label": "Superintendent Movement",
+        "description": "Track superintendent changes across Texas districts",
+        "repo_path": "BookmarkED-Corp/bookmarked-district-intelligence"
+      },
+      {
+        "label": "IMTA Allotment Funding",
+        "description": "IMTA fund allocation and usage tracking",
+        "repo_path": "BookmarkED-Corp/bookmarked-district-intelligence"
+      },
+      {
+        "label": "Media Intelligence",
+        "description": "District media coverage and sentiment",
+        "repo_path": "BookmarkED-Corp/bookmarked-district-intelligence"
+      },
+      {
+        "label": "District Profiles",
+        "description": "Individual district profile viewer",
+        "repo_path": "BookmarkED-Corp/bookmarked-district-intelligence"
+      }
     ]
   },
+  "resolved": [],
   "finance": {
     "summary": {
       "cash": "$97.7K",
@@ -163,63 +255,101 @@
       "deferral_repayment_october": "$106K"
     },
     "metrics": [
-      { "label": "Cash on hand", "value": "$97.7K", "trend": "down" },
-      { "label": "Monthly burn", "value": "~$115K", "trend": "warning" },
-      { "label": "Runway", "value": "~4 weeks", "trend": "warning" },
-      { "label": "AWS spend (July)", "value": "$18,627", "trend": "warning" }
+      {
+        "label": "Cash on hand",
+        "value": "$97.7K",
+        "trend": "down"
+      },
+      {
+        "label": "Monthly burn",
+        "value": "~$115K",
+        "trend": "warning"
+      },
+      {
+        "label": "Runway (weeks)",
+        "value": "~3-4",
+        "trend": "warning"
+      }
     ],
     "dashboards": [
-      { "label": "Financial Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-financial-dashboard/" }
+      {
+        "label": "Financial Dashboard",
+        "url": "https://bookmarked-corp.github.io/bookmarked-financial-dashboard/"
+      }
     ]
   },
   "sales": {
     "summary": {
-      "active_pipeline": "Unknown — HubSpot data 16 days stale",
-      "deals_closing_this_month": "Unknown — pipeline blind",
-      "stalled_deals": "Garland $140K, CFB $107K — $247K behind unpulled lever",
+      "active_pipeline": "$546K TX + $516K Renewal (stale — last HubSpot pull July 6)",
+      "deals_closing_this_month": "Data stale — 51 districts in 'To Be Renewed'",
+      "stalled_deals": "Utah SEA ($1.3M FY27 parked), Garland $140K, CFB $107K",
       "imta_districts": "Mesquite, Garland"
     },
-    "note": "Zig's HubSpot MCP missing from runtime. Last live pull July 6. 16 days blind. 51 of 68 renewals still 'To Be Renewed.'",
+    "note": "Canyon ISD closed at $3K (was $10,598). 'Testing' flag validated — other 'To Be Renewed' may be similar zombies. Zig needs HubSpot MCP restored.",
     "links": [
-      { "label": "Sales Dashboard", "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/" },
-      { "label": "Jan's Methodology", "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017" }
+      {
+        "label": "Sales Dashboard",
+        "url": "https://bookmarked-corp.github.io/bookmarked-sales-dashboard/"
+      },
+      {
+        "label": "Jan's Methodology",
+        "url": "https://bookmarked-team.atlassian.net/wiki/spaces/SH/pages/155222017"
+      }
     ]
   },
   "cs": {
-    "summary": {
-      "note": "Atlas (CCSO Agent) — CS data pipeline not yet integrated into cockpit"
-    }
+    "summary": {}
   },
   "product": {
-    "summary": {
-      "note": "Johnny (CPO Agent) — Product data pipeline not yet integrated into cockpit"
-    }
+    "summary": {}
   },
   "strategy_decisions": [
-    { "id": "D-001", "title": "Three-play framework (Network Trust, Collection Benchmarking, AI-recommendation)", "status": "active" },
-    { "id": "D-004", "title": "Design & Brand v4.0.0 (deployed July 17)", "status": "active" },
-    { "id": "D-004b", "title": "Moak Casey distribution channel", "status": "active" },
-    { "id": "D-009", "title": "Customer Feedback Workflow v3 (deployed July 16)", "status": "active" }
+    {
+      "id": "D-001",
+      "title": "Three-Play Framework (Network Trust, Collection Benchmarking, Literacy Measurement)",
+      "status": "Active"
+    },
+    {
+      "id": "D-004",
+      "title": "Moak Casey Distribution Channel + Design v4.0.0",
+      "status": "Active"
+    },
+    {
+      "id": "D-009",
+      "title": "Customer Feedback Workflow v3",
+      "status": "Active"
+    }
   ],
   "strategy_open": [
-    { "id": "O-TARGET", "title": "Revenue target: Zig $1.5M vs Steve $1M — 25 days uncorrected", "status": "critical" },
-    { "id": "O-GARLAND", "title": "Garland $140K + CFB $107K follow-up — 8 days no movement", "status": "urgent" },
-    { "id": "O-NATASHA", "title": "6+ renewals unassigned — 67 days", "status": "urgent" },
-    { "id": "O-PATRICK", "title": "Equity cliff OVERDUE +6 — 31 days lag", "status": "critical" },
-    { "id": "O-ESC-AGENTS", "title": "Agents don't have July 6-8 ESC-10 intel", "status": "open" }
+    {
+      "id": "O-TARGET",
+      "title": "Revenue Target: Zig at $1.5M vs Steve at $1M — DAY 26",
+      "status": "CRITICAL"
+    },
+    {
+      "id": "O-GARLAND",
+      "title": "Garland $247K follow-up after July 13 Jodi meeting",
+      "status": "Urgent"
+    },
+    {
+      "id": "O-NATASHA",
+      "title": "Natasha renewals (6+ districts) unassigned — 68 days",
+      "status": "Escalated"
+    },
+    {
+      "id": "O-PATRICK",
+      "title": "Patrick equity cliff OVERDUE +7 — 32 days lag",
+      "status": "Escalated"
+    }
   ],
   "tokens_total": {
-    "month": "1,440",
-    "last_month": "2,670",
-    "or_balance": "107",
-    "combined_daily": "206",
-    "or_daily": "113",
-    "ant_daily": "93"
+    "month": "TBD",
+    "last_month": "TBD",
+    "or_balance": "TBD",
+    "combined_daily": "TBD",
+    "or_daily": "TBD",
+    "ant_daily": "TBD"
   },
-  "tokens_models": [
-    { "model": "claude-sonnet-4.6", "cost": 179.46, "label": "Off-Policy" },
-    { "model": "claude-opus-4.6", "cost": 178.49, "label": "Personal" },
-    { "model": "deepseek-v4-pro", "cost": 157.81, "label": "Fleet" }
-  ],
+  "tokens_models": [],
   "tokens_dashboard_url": "https://bookmarked-corp.github.io/bookmarked-token-dashboard/"
 }
